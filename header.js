@@ -131,7 +131,7 @@ document.addEventListener("DOMContentLoaded", function() {
         border-radius: 4px;
         
         /* YAHAN BOX KI PADDING DI HAI (Uper/Neeche 10px, Left/Right 0) */
-        padding: 0px 20px; 
+        padding: 20px 20px; 
         z-index: 100;
         display: flex;
         flex-direction: column; 
@@ -153,6 +153,7 @@ document.addEventListener("DOMContentLoaded", function() {
         padding: 0px 0px; /* Tumhari file wali setting */
         font-size: 14px;
         color: #666;
+        line-hight: 0;
         white-space: nowrap;
         display: block;
         transition: 0.2s;

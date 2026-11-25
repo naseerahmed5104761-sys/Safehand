@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
     <header class="site-header">
       <div class="container">
         
-        <!-- Logo -->
+        <!-- Logo (Naya Logo Link) -->
         <a href="#" class="logo">
           <img src="https://www.safehandssecurityservices.com.au/wp-content/uploads/2025/11/cropped-cropped-Untitled-design-28.webp" alt="Safehands Security Services">
         </a>
@@ -91,7 +91,7 @@ document.addEventListener("DOMContentLoaded", function() {
       .site-header .main-nav ul {
         display: flex;
         list-style: none;
-        gap: 25px;
+        gap: 30px;
         align-items: center;
       }
 
@@ -113,24 +113,22 @@ document.addEventListener("DOMContentLoaded", function() {
         color: #b12525;
       }
 
-      /* Dropdown Menu - PADDING FIX */
+      /* Dropdown Menu - COMPACT & CLEAN */
       .site-header .dropdown-menu {
         position: absolute;
         top: 100%;
         left: 0;
         background: #ffffff;
-        min-width: 240px;
-        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        min-width: 210px; /* Width thodi kam ki */
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
         border: 1px solid #eee;
         opacity: 0;
         visibility: hidden;
         transform: translateY(10px);
-        transition: all 0.3s ease;
+        transition: all 0.2s ease;
         border-radius: 4px;
         
-        /* Box ki andar ki padding (Upper/Neeche space) */
-        padding: 15px 0; 
-        
+        padding: 10px 0; /* Box ki upper/niche space */
         z-index: 100;
         display: flex;
         flex-direction: column; 
@@ -144,14 +142,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
       .site-header .dropdown-menu li {
         width: 100%;
-        margin: 0; /* Margin khatam kar di */
+        margin: 0;
       }
 
-      /* Har row (item) ki padding */
+      /* Har row (item) ki padding (Compact) */
       .site-header .dropdown-menu li a {
-        padding: 8px 24px; /* Upar/neeche 8px, Left/Right 24px */
-        font-size: 14px;
-        color: #555;
+        padding: 8px 20px; /* Upar/neeche 8px, left/right 20px */
+        font-size: 14px; /* Font size chota kiya */
+        color: #666;
         white-space: nowrap;
         display: block;
         transition: 0.2s;
@@ -231,11 +229,11 @@ document.addEventListener("DOMContentLoaded", function() {
           transform: none;
           display: none;
           background: #f8f9fa;
-          padding: 0; /* Mobile pe outer padding 0 */
+          padding: 0; 
         }
         
         .site-header .dropdown-menu li a {
-          padding: 12px 40px; /* Mobile pe thoda indented */
+          padding: 12px 40px; 
         }
 
         .site-header .main-nav ul li.has-dropdown:hover .dropdown-menu {

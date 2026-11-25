@@ -80,11 +80,16 @@ a{text-decoration:none}
   background:#fff;
 }
 
-/* ===== RESPONSIVE ===== */
+/* ===== RESPONSIVE (MOBILE VIEW) ===== */
 @media(max-width:980px){
   .hero-grid{grid-template-columns:1fr;gap:40px}
   .hero{padding:60px 0}
   .hero h1{font-size:32px;}
+  
+  /* YEH HAI WO CHANGE - Mobile par video hide kar diya */
+  .hero-video {
+    display: none; 
+  }
 }
 </style>
 </head>
@@ -115,6 +120,26 @@ a{text-decoration:none}
 
   </div>
 </section>
+
+<script>
+// Video Container ko select kiya
+const videoContainer = document.getElementById('videoContainer');
+
+// Jab box par click ho, toh iframe load ho jaye
+videoContainer.addEventListener('click', function() {
+  const videoId = 'KyditPSJwSA';
+  
+  // Box ke andar ka pura HTML replace kar rahe hain iframe se
+  this.innerHTML = `
+    <iframe 
+      src="https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0" 
+      title="Safehands Security Services Video" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen>
+    </iframe>`;
+});
+</script>
+
 
 <script>
 // Video Container ko select kiya

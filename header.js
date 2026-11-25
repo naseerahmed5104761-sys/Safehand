@@ -146,7 +146,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
       /* Har row (item) ki padding - FIXED */
       .site-header .dropdown-menu li a {
-        padding: 2px 20px; /* Top/Bottom 2px, Left/Right 20px */
+        padding: 0px 20px; /* Top/Bottom 2px, Left/Right 20px */
         font-size: 14px;
         line-height: 0; /* LINE HEIGHT FIX - Space kam karne ke liye */
         color: #666;

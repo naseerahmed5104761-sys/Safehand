@@ -113,13 +113,13 @@ document.addEventListener("DOMContentLoaded", function() {
         color: #b12525;
       }
 
-      /* Dropdown Menu */
+      /* Dropdown Menu - FIXED TO BE VERTICAL */
       .site-header .dropdown-menu {
         position: absolute;
         top: 100%;
         left: 0;
         background: #ffffff;
-        min-width: 220px;
+        min-width: 240px; /* Width barha di */
         box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
         border: 1px solid #eee;
         opacity: 0;
@@ -129,6 +129,10 @@ document.addEventListener("DOMContentLoaded", function() {
         border-radius: 4px;
         padding: 10px 0;
         z-index: 100;
+        
+        /* YEH HAI MAIN FIX - Dropdown ko line se column mein laya hai */
+        display: flex;
+        flex-direction: column; 
       }
 
       .site-header .main-nav ul li.has-dropdown:hover .dropdown-menu {
@@ -142,7 +146,7 @@ document.addEventListener("DOMContentLoaded", function() {
       }
 
       .site-header .dropdown-menu li a {
-        padding: 10px 20px;
+        padding: 12px 20px;
         font-size: 14px;
         color: #555;
         white-space: nowrap;

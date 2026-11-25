@@ -2264,7 +2264,133 @@ videoContainer.addEventListener('click', function() {
 
 </div>
 
+  <!-- ======================================================= -->
+<!-- OUR MISSION SECTION (With New Background Image)         -->
+<!-- ======================================================= -->
+<div class="safehands-mission-section">
   
+  <!-- GOOGLE FONTS IMPORT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Titillium+Web:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- SECTION SPECIFIC CSS -->
+  <style>
+    .safehands-mission-section { 
+      background: #f4f5f7; 
+      padding: 60px 0 80px; 
+      font-family: 'Lato', system-ui, sans-serif;
+    }
+    .safehands-mission-section .container { 
+      max-width: 1180px; 
+      margin: 0 auto; 
+      padding: 0 24px; 
+    }
+    
+    /* Mission Box with Background Image */
+    .safehands-mission-section .mission-box {
+      position: relative;
+      border-radius: 12px;
+      overflow: hidden;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 100px 40px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      
+      /* Background Image (1.webp) */
+      background-image: url('https://www.safehandssecurityservices.com.au/wp-content/uploads/2025/01/1.webp');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed; /* Scroll fix effect */
+    }
+    
+    /* Dark Overlay (Text clear padhne ke liye) */
+    .safehands-mission-section .mission-box::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(10, 15, 20, 0.7); /* 70% Dark Overlay */
+      z-index: 1;
+    }
+
+    /* Content Wrapper (Overlay ke upar dikhane ke liye) */
+    .safehands-mission-section .mission-content {
+      position: relative;
+      z-index: 2;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    /* Heading */
+    .safehands-mission-section .mission-title {
+      font-family: 'Titillium Web', sans-serif;
+      font-size: 48px;
+      color: #ffffff;
+      font-weight: 700;
+      margin-bottom: 20px;
+      line-height: 1.2;
+    }
+
+    /* Paragraph */
+    .safehands-mission-section .mission-text {
+      font-size: 18px;
+      color: #e0e0e0;
+      line-height: 1.6;
+      margin-bottom: 35px;
+      font-weight: 400;
+    }
+
+    /* Button */
+    .safehands-mission-section .mission-btn {
+      display: inline-block;
+      background: transparent;
+      color: #ffffff;
+      padding: 14px 32px;
+      border: 2px solid #ffffff;
+      font-family: 'Lato', sans-serif;
+      font-size: 15px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .safehands-mission-section .mission-btn:hover {
+      background: #ffffff;
+      color: #111;
+    }
+
+    /* Mobile Responsive */
+    @media (max-width: 768px) {
+      .safehands-mission-section .mission-box { 
+        padding: 70px 24px; 
+        background-attachment: scroll; /* Mobile pe fix background buggy hota hai */
+      }
+      .safehands-mission-section .mission-title { 
+        font-size: 36px; 
+      }
+      .safehands-mission-section .mission-text { 
+        font-size: 16px; 
+      }
+    }
+  </style>
+
+  <!-- SECTION HTML -->
+  <div class="container">
+    <div class="mission-box">
+      <div class="mission-content">
+        
+        <h2 class="mission-title">Our Mission</h2>
+        
+        <p class="mission-text">To provide trusted, innovative, and comprehensive security solutions in Adelaide that ensures safety and peace of mind.</p>
+        
+        <a href="https://www.safehandssecurityservices.com.au/contacts-us/" class="mission-btn" target="_blank" rel="noopener">Contact Us</a>
+        
+      </div>
+    </div>
+  </div>
+
+</div>
   
 <script src="header.js"></script>
 </body>

@@ -147,7 +147,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
       /* Har row (item) ki padding (Compact) */
       .site-header .dropdown-menu li a {
-        padding: 8px 20px; /* Upar/neeche 8px, left/right 20px */
+        padding: 2px 20px; /* Upar/neeche 8px, left/right 20px */
         font-size: 14px; /* Font size chota kiya */
         color: #666;
         white-space: nowrap;

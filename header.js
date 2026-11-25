@@ -113,7 +113,7 @@ document.addEventListener("DOMContentLoaded", function() {
         color: #b12525;
       }
 
-      /* Dropdown Menu (SHADOW & PADDING FIXED) */
+      /* Dropdown Menu - SIRF BOX KI PADDING */
       .site-header .dropdown-menu {
         position: absolute;
         top: 100%;
@@ -131,7 +131,7 @@ document.addEventListener("DOMContentLoaded", function() {
         transition: all 0.2s ease;
         border-radius: 4px;
         
-        /* Padding: Top/Bottom 10px, Left/Right 0 */
+        /* YAHAN BOX KI PADDING DI HAI (Uper/Neeche 10px, Left/Right 0) */
         padding: 10px 0; 
         
         z-index: 100;
@@ -150,13 +150,12 @@ document.addEventListener("DOMContentLoaded", function() {
         margin: 0;
       }
 
-      /* Har row (item) ki padding - FIXED */
+      /* Yahan LI OR A KI PADDING KO BILKUL NAHI CHHERA (Wesa hi hai) */
       .site-header .dropdown-menu li a {
-        /* Top/Bottom 6px, Left/Right 20px */
-        padding: 6px 20px; 
+        padding: 0px 20px; /* Tumhari file wali setting */
         font-size: 14px;
-        line-height: 1.3; 
-        color: #555;
+        line-height: 2.0; /* Line height normal */
+        color: #666;
         white-space: nowrap;
         display: block;
         transition: 0.2s;

@@ -127,7 +127,7 @@ document.addEventListener("DOMContentLoaded", function() {
         transform: translateY(10px);
         transition: all 0.2s ease;
         border-radius: 4px;
-        padding: 8px 0; 
+        padding: 8px, 8px; 
         z-index: 100;
         display: flex;
         flex-direction: column; 

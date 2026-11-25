@@ -117,7 +117,7 @@ document.addEventListener("DOMContentLoaded", function() {
       .site-header .dropdown-menu {
         position: absolute;
         top: 100%;
-        left: 0;
+       
         background: #ffffff;
         min-width: 220px;
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);

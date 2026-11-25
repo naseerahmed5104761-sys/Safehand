@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
     <header class="site-header">
       <div class="container">
         
-        <!-- Logo (Naya Logo Link) -->
+        <!-- Logo -->
         <a href="#" class="logo">
           <img src="https://www.safehandssecurityservices.com.au/wp-content/uploads/2025/11/cropped-cropped-Untitled-design-28.webp" alt="Safehands Security Services">
         </a>
@@ -113,13 +113,13 @@ document.addEventListener("DOMContentLoaded", function() {
         color: #b12525;
       }
 
-      /* Dropdown Menu - COMPACT & CLEAN */
+      /* Dropdown Menu */
       .site-header .dropdown-menu {
         position: absolute;
         top: 100%;
         left: 0;
         background: #ffffff;
-        min-width: 210px; /* Width thodi kam ki */
+        min-width: 230px; /* Width thodi set ki */
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
         border: 1px solid #eee;
         opacity: 0;
@@ -128,7 +128,7 @@ document.addEventListener("DOMContentLoaded", function() {
         transition: all 0.2s ease;
         border-radius: 4px;
         
-        padding: 10px 0; /* Box ki upper/niche space */
+        padding: 10px 0; /* Box ki upper/niche thodi space */
         z-index: 100;
         display: flex;
         flex-direction: column; 
@@ -145,10 +145,10 @@ document.addEventListener("DOMContentLoaded", function() {
         margin: 0;
       }
 
-      /* Har row (item) ki padding (Compact) */
+      /* Har row (item) ki padding - EXACT AS REQUESTED */
       .site-header .dropdown-menu li a {
-        padding: 2px 20px; /* Upar/neeche 8px, left/right 20px */
-        font-size: 14px; /* Font size chota kiya */
+        padding: 2px 20px; /* Top/Bottom 2px, Left/Right 20px */
+        font-size: 14px;
         color: #666;
         white-space: nowrap;
         display: block;
@@ -233,7 +233,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
         
         .site-header .dropdown-menu li a {
-          padding: 12px 40px; 
+          padding: 10px 40px; 
         }
 
         .site-header .main-nav ul li.has-dropdown:hover .dropdown-menu {

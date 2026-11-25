@@ -117,7 +117,6 @@ document.addEventListener("DOMContentLoaded", function() {
       .site-header .dropdown-menu {
         position: absolute;
         top: 100%;
-        left: 0;
         background: #ffffff;
         min-width: 220px;
         
@@ -132,7 +131,7 @@ document.addEventListener("DOMContentLoaded", function() {
         border-radius: 4px;
         
         /* YAHAN BOX KI PADDING DI HAI (Uper/Neeche 10px, Left/Right 0) */
-        padding: 10px 0; 
+        padding: 10px 20px; 
         
         z-index: 100;
         display: flex;
@@ -154,7 +153,6 @@ document.addEventListener("DOMContentLoaded", function() {
       .site-header .dropdown-menu li a {
         padding: 0px 20px; /* Tumhari file wali setting */
         font-size: 14px;
-        line-height: 2.0; /* Line height normal */
         color: #666;
         white-space: nowrap;
         display: block;

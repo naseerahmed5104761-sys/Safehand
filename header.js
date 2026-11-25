@@ -119,7 +119,7 @@ document.addEventListener("DOMContentLoaded", function() {
         top: 100%;
         left: 0;
         background: #ffffff;
-        min-width: 230px; /* Width thodi set ki */
+        min-width: 220px;
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
         border: 1px solid #eee;
         opacity: 0;
@@ -127,8 +127,7 @@ document.addEventListener("DOMContentLoaded", function() {
         transform: translateY(10px);
         transition: all 0.2s ease;
         border-radius: 4px;
-        
-        padding: 10px 0; /* Box ki upper/niche thodi space */
+        padding: 8px 0; 
         z-index: 100;
         display: flex;
         flex-direction: column; 
@@ -145,10 +144,11 @@ document.addEventListener("DOMContentLoaded", function() {
         margin: 0;
       }
 
-      /* Har row (item) ki padding - EXACT AS REQUESTED */
+      /* Har row (item) ki padding - FIXED */
       .site-header .dropdown-menu li a {
         padding: 2px 20px; /* Top/Bottom 2px, Left/Right 20px */
         font-size: 14px;
+        line-height: 1.3; /* LINE HEIGHT FIX - Space kam karne ke liye */
         color: #666;
         white-space: nowrap;
         display: block;

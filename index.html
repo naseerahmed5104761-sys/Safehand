@@ -1,0 +1,1904 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Safehands Security Services | Security Company in Adelaide</title>
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --brand:#b12525;
+  --dark:#111111;
+  --max:1180px;
+}
+body{font:17px/1.6 system-ui,"Segoe UI",sans-serif;color:#333;background:#fff}
+a{text-decoration:none}
+.container{max-width:var(--max);margin:0 auto;padding:0 24px}
+
+/* ===== HERO ===== */
+.hero{background:#fff;padding:100px 0;}
+.hero-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:60px;align-items:center;}
+
+.hero-divider{width:60px;height:2px;background:#1a73e8;margin-bottom:24px;} 
+.hero h1{
+  font-size:42px; 
+  line-height:1.25;
+  color:var(--dark);
+  margin-bottom:32px;
+  font-weight:700;
+}
+
+.hero .btn-contact{
+  display:inline-block;
+  background:#fff;
+  color:var(--brand);
+  padding:12px 28px;
+  border:1px solid var(--brand);
+  border-radius:4px;
+  font-weight:600;
+  font-size:16px;
+  transition:.25s;
+}
+.hero .btn-contact:hover{
+  background:var(--brand);
+  color:#fff;
+}
+
+/* ===== VIDEO IFRAME BOX ===== */
+.hero-video{position:relative}
+.video-frame{
+  position:relative;
+  aspect-ratio:16/9;
+  border-radius:8px;
+  overflow:hidden;
+  background:#000;
+  cursor:pointer;
+  box-shadow:0 10px 30px rgba(0,0,0,.1);
+}
+.video-frame iframe{
+  width:100%;height:100%;border:0;display:block;
+}
+.video-overlay{
+  position:absolute;inset:0;
+  background-image:url('https://www.safehandssecurityservices.com.au/wp-content/uploads/2025/01/Thumbnail-.webp');
+  background-size:cover;
+  background-position:center;
+  display:grid;place-items:center;
+  transition:.3s;
+}
+.play-btn{
+  width:70px;height:70px;border-radius:50%;
+  background:rgba(255,255,255,0.9);color:var(--brand);
+  font-size:24px;border:none;cursor:pointer;
+  display:grid;place-items:center;padding-left:5px;
+  transition:.25s;
+  box-shadow:0 4px 15px rgba(0,0,0,.3);
+}
+.video-overlay:hover .play-btn{
+  transform:scale(1.1);
+  background:#fff;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:980px){
+  .hero-grid{grid-template-columns:1fr;gap:40px}
+  .hero{padding:60px 0}
+  .hero h1{font-size:32px;}
+}
+</style>
+</head>
+<body>
+
+<section class="hero">
+  <div class="container hero-grid">
+    
+    <!-- Left Side -->
+    <div class="hero-text">
+      <div class="hero-divider"></div>
+      <h1>Premier Security Company in Adelaide Providing Exceptional Security Services Since 2017</h1>
+      <a href="https://www.safehandssecurityservices.com.au/contacts-us/" class="btn-contact" target="_blank" rel="noopener">Contact Us</a>
+    </div>
+
+    <!-- Right Side: Video Box -->
+    <div class="hero-video">
+      <!-- Yahan click karne par video chalegi -->
+      <div class="video-frame" id="videoContainer">
+        <div class="video-overlay">
+          <button class="play-btn" aria-label="Play video">
+             <svg aria-hidden="true" viewBox="0 0 1000 1000" width="30" height="30" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M838 162C746 71 633 25 500 25 371 25 258 71 163 162 71 254 25 367 25 500 25 633 71 746 163 837 254 929 367 979 500 979 633 979 746 933 838 837 929 746 975 633 975 500 975 367 929 254 838 162M808 192C892 279 933 379 933 500 933 621 892 725 808 808 725 892 621 938 500 938 379 938 279 896 196 808 113 725 67 621 67 500 67 379 108 279 196 192 279 108 383 62 500 62 621 62 721 108 808 192M438 392V642L642 517 438 392Z"></path></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<script>
+// Video Container ko select kiya
+const videoContainer = document.getElementById('videoContainer');
+
+// Jab box par click ho, toh iframe load ho jaye
+videoContainer.addEventListener('click', function() {
+  const videoId = 'KyditPSJwSA';
+  
+  // Box ke andar ka pura HTML replace kar rahe hain iframe se
+  this.innerHTML = `
+    <iframe 
+      src="https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0" 
+      title="Safehands Security Services Video" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen>
+    </iframe>`;
+});
+</script>
+
+
+<!-- ======================================================= -->
+<!-- ABOUT SECTION                                           -->
+<!-- ======================================================= -->
+<div class="safehands-about-section">
+  
+  <!-- SECTION SPECIFIC CSS -->
+  <style>
+    .safehands-about-section { 
+      background: #f8f9fa; 
+      padding: 60px 0 80px; 
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+    .safehands-about-section .container { 
+      max-width: 1180px; 
+      margin: 0 auto; 
+      padding: 0 24px; 
+    }
+    .safehands-about-section .about-box { 
+      background: #ffffff; 
+      border-radius: 12px; 
+      padding: 60px 50px; 
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05); 
+      text-align: center; 
+      max-width: 1050px; 
+      margin: 0 auto; 
+    }
+    .safehands-about-section .about-title { 
+      font-size: 38px; 
+      color: #111; 
+      font-weight: 700; 
+      line-height: 1.3; 
+      margin-bottom: 30px; 
+    }
+    .safehands-about-section .about-content p { 
+      font-size: 16px; 
+      color: #555; 
+      line-height: 1.8; 
+      margin-bottom: 20px; 
+    }
+    .safehands-about-section .about-content p:last-child { 
+      margin-bottom: 0; 
+    }
+    .safehands-about-section .about-content a { 
+      color: #b12525; 
+      text-decoration: none; 
+      transition: 0.2s; 
+    }
+    .safehands-about-section .about-content a:hover { 
+      text-decoration: underline; 
+    }
+    
+    /* Mobile Responsive */
+    @media (max-width: 768px) {
+      .safehands-about-section .about-box { padding: 40px 25px; }
+      .safehands-about-section .about-title { font-size: 28px; }
+    }
+  </style>
+
+  <!-- SECTION HTML -->
+  <div class="container">
+    <div class="about-box">
+      <h2 class="about-title">Safehands Security Services: A Licensed and Registered Security Company</h2>
+      
+      <div class="about-content">
+        <p>Safehands Security Services is a licensed &amp; registered security company (see <a href="https://www.safehandssecurityservices.com.au/" target="_blank" rel="noopener">our licenses and registration certificates here</a>), offering a wide range of security solutions. Our security services include <a href="https://www.safehandssecurityservices.com.au/services/event-security-services-adelaide/" target="_blank" rel="noopener">event security</a>, party security, crowd control, cash-in-transit, CCTV installation, alarm monitoring, personal protection, site security, and <a href="https://www.safehandssecurityservices.com.au/services/security-guards-adelaide-services/" target="_blank" rel="noopener">professional security guard services</a>.</p>
+        
+        <p>In addition, our security personnel are well-equipped with advanced access control systems, metal detectors, surveillance drones, intruder detection services, and biometric scanners. With this latest technology, we enable our security professionals to perform their duties with precision.</p>
+        
+        <p>Additionally, we have the most convenient process for you to hire our security services in Adelaide. Simply fill out our <a href="https://www.safehandssecurityservices.com.au/contacts-us/" target="_blank" rel="noopener">contact form</a> or give us a call on our dedicated phone-number. One of our security representatives will visit your location to provide a tailored security plan designed to meet your specific needs.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION JS (Future use ke liye agar koi animation ya effect add karna ho) -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      // Abhi is section mein JS ki zaroorat nahi hai, 
+      // lekin agar aage koi animation add karni ho toh yahan kar sakte hain.
+      console.log("About Section Loaded Successfully.");
+    });
+  </script>
+</div>
+
+
+
+
+<!-- ======================================================= -->
+<!-- SERVICES SECTION (Images ke sath)                       -->
+<!-- ======================================================= -->
+<div class="safehands-services-section">
+  
+  <!-- SECTION SPECIFIC CSS -->
+  <style>
+    .safehands-services-section { 
+      background: #fff; 
+      padding: 80px 0; 
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+    .safehands-services-section .container { 
+      max-width: 1180px; 
+      margin: 0 auto; 
+      padding: 0 24px; 
+    }
+    
+    /* Top Header Area */
+    .safehands-services-section .services-header { 
+      display: grid; 
+      grid-template-columns: 1fr 1fr; 
+      gap: 40px; 
+      align-items: center; 
+      margin-bottom: 50px;
+    }
+    .safehands-services-section .services-header h3 { 
+      font-size: 16px; 
+      color: #b12525; /* Red text */
+      font-weight: 700; 
+      margin-bottom: 12px;
+    }
+    .safehands-services-section .services-header h2 { 
+      font-size: 32px; 
+      color: #111; 
+      font-weight: 700; 
+      line-height: 1.3;
+    }
+    .safehands-services-section .services-header p { 
+      font-size: 15px; 
+      color: #555; 
+      line-height: 1.7; 
+      margin-bottom: 15px;
+    }
+    .safehands-services-section .services-header a { 
+      color: #b12525; 
+      font-size: 14px; 
+      font-weight: 700; 
+      text-decoration: none; 
+      text-transform: uppercase;
+    }
+    .safehands-services-section .services-header a:hover { 
+      text-decoration: underline; 
+    }
+
+    /* Cards Grid */
+    .safehands-services-section .services-grid { 
+      display: grid; 
+      grid-template-columns: repeat(4, 1fr); 
+      gap: 24px; 
+    }
+    
+    /* Single Card */
+    .safehands-services-section .service-card { 
+      background: #fff; 
+      border: 1px solid #eaeaea; 
+      border-radius: 4px; 
+      overflow: hidden; 
+      display: flex; 
+      flex-direction: column;
+      transition: 0.3s;
+    }
+    .safehands-services-section .service-card:hover {
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      transform: translateY(-5px);
+    }
+    .safehands-services-section .service-card img { 
+      width: 100%; 
+      height: 180px; 
+      object-fit: cover; 
+      display: block;
+    }
+    .safehands-services-section .card-body { 
+      padding: 24px; 
+      display: flex; 
+      flex-direction: column; 
+      flex: 1;
+      border-left: 2px solid transparent; /* Red line ke liye jagah */
+      transition: 0.3s;
+    }
+    .safehands-services-section .service-card:hover .card-body {
+      border-left-color: #b12525;
+    }
+    .safehands-services-section .card-body h4 { 
+      font-size: 20px; 
+      color: #111; 
+      font-weight: 700; 
+      margin-bottom: 12px; 
+      line-height: 1.3;
+    }
+    .safehands-services-section .card-body p { 
+      font-size: 14px; 
+      color: #666; 
+      line-height: 1.6; 
+      margin-bottom: 24px; 
+      flex: 1; 
+    }
+    
+    /* Button */
+    .safehands-services-section .card-btn { 
+      display: inline-block; 
+      background: #fdf5f5; /* Halka red background */
+      color: #b12525; 
+      padding: 10px 16px; 
+      font-size: 13px; 
+      font-weight: 600; 
+      text-decoration: none; 
+      border: 1px solid #f0dcdc; 
+      border-radius: 4px;
+      align-self: flex-start;
+      transition: 0.2s;
+    }
+    .safehands-services-section .card-btn:hover { 
+      background: #b12525; 
+      color: #fff; 
+    }
+
+    /* Mobile Responsive */
+    @media (max-width: 1024px) {
+      .safehands-services-section .services-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 768px) {
+      .safehands-services-section .services-header { grid-template-columns: 1fr; gap: 20px; }
+      .safehands-services-section .services-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+
+  <!-- SECTION HTML -->
+  <div class="container">
+    
+    <!-- Header Area -->
+    <div class="services-header">
+      <div>
+        <h3>Detail About The Range of Security Services We Provide</h3>
+        <h2>Security Services we provide across Adelaide</h2>
+      </div>
+      <div>
+        <p>Whether you're a corporate entity looking for robust security solutions, an individual prioritizing personal safety, or an event organizer seeking seamless security arrangements, SafeHands Security Services offers reliable surveillance services across Adelaide.</p>
+        <a href="https://www.safehandssecurityservices.com.au/services/" target="_blank" rel="noopener">CHECK ALL SERVICES &rarr;</a>
+      </div>
+    </div>
+
+    <!-- Cards Grid -->
+    <div class="services-grid">
+      
+      <!-- Card 1: Residential -->
+      <div class="service-card">
+        <img src="https://www.safehandssecurityservices.com.au/wp-content/uploads/2025/11/14-1-1536x1152.webp" alt="Residential Security">
+        <div class="card-body">
+          <h4>Residential<br>Security</h4>
+          <p>With the rising number of residential hooliganism, larceny...</p>
+          <a href="https://www.safehandssecurityservices.com.au/services/residential-security/" target="_blank" rel="noopener" class="card-btn">Residential Security</a>
+        </div>
+      </div>
+
+      <!-- Card 2: Construction -->
+      <div class="service-card">
+        <img src="https://www.safehandssecurityservices.com.au/wp-content/uploads/2025/11/h3.webp" alt="Construction Security">
+        <div class="card-body">
+          <h4>Construction<br>Security</h4>
+          <p>Vandalize and burglary are common threads to homes and con...</p>
+          <a href="https://www.safehandssecurityservices.com.au/services/construction-site-security-services-adelaide/" target="_blank" rel="noopener" class="card-btn">Construction Security</a>
+        </div>
+      </div>
+
+      <!-- Card 3: Event -->
+      <div class="service-card">
+        <img src="https://www.safehandssecurityservices.com.au/wp-content/uploads/2025/01/8.webp" alt="Event Security">
+        <div class="card-body">
+          <h4>Event Security</h4>
+          <p>We provide a full range of event security services in Adelaide and the surrounding areas...</p>
+          <a href="https://www.safehandssecurityservices.com.au/services/event-security-services-adelaide/" target="_blank" rel="noopener" class="card-btn">Event Security</a>
+        </div>
+      </div>
+
+      <!-- Card 4: Guards -->
+      <div class="service-card">
+        <img src="https://www.safehandssecurityservices.com.au/wp-content/uploads/2025/01/t1.webp" alt="Security Guards">
+        <div class="card-body">
+          <h4>Security Guards</h4>
+          <p>The need for hiring a security guard in Adelaide is on the rise with...</p>
+          <a href="https://www.safehandssecurityservices.com.au/services/security-guards-adelaide-services/" target="_blank" rel="noopener" class="card-btn">Security Guards</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- SECTION JS (Future use) -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      console.log("Services Section Loaded with Images.");
+    });
+  </script>
+</div>
+
+
+
+<!-- ======================================================= -->
+<!-- WHY CHOOSE US SECTION (With Original Fonts)             -->
+<!-- ======================================================= -->
+<div class="safehands-why-section">
+  
+  <!-- GOOGLE FONTS IMPORT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Titillium+Web:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- SECTION SPECIFIC CSS -->
+  <style>
+    .safehands-why-section { 
+      background: #f8f9fa; 
+      padding: 60px 0 80px; 
+      /* Apply Lato to body text */
+      font-family: 'Lato', system-ui, sans-serif;
+    }
+    .safehands-why-section .container { 
+      max-width: 1180px; 
+      margin: 0 auto; 
+      padding: 0 24px; 
+    }
+    
+    /* Outer Big Box */
+    .safehands-why-section .why-outer-box {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 60px 40px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    
+    /* Main Heading - Apply Titillium Web */
+    .safehands-why-section .why-main-title { 
+      text-align: center;
+      font-family: 'Titillium Web', sans-serif; /* Original Heading Font */
+      font-size: 38px; 
+      color: #111; 
+      font-weight: 700; 
+      margin-bottom: 50px;
+      line-height: 1.3;
+    }
+    
+    /* Cards Grid */
+    .safehands-why-section .why-grid { 
+      display: grid; 
+      grid-template-columns: repeat(3, 1fr); 
+      gap: 30px; 
+    }
+    
+    /* Single Card */
+    .safehands-why-section .why-card { 
+      background: #ffffff; 
+      border-radius: 8px; 
+      padding: 40px 30px; 
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08); 
+      border: 1px solid #f0f0f0;
+      text-align: center;
+      transition: 0.3s;
+    }
+    .safehands-why-section .why-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+    }
+    
+    /* Card Heading - Apply Titillium Web */
+    .safehands-why-section .why-card h3 { 
+      font-family: 'Titillium Web', sans-serif; /* Original Heading Font */
+      font-size: 24px; 
+      color: #111; 
+      font-weight: 600; /* Thoda light bold */
+      margin-bottom: 20px;
+      line-height: 1.3;
+    }
+    
+    /* Card Paragraph - Lato */
+    .safehands-why-section .why-card p { 
+      font-size: 16px; 
+      color: #555; 
+      line-height: 1.8; 
+      margin: 0;
+      font-weight: 400;
+    }
+    
+    /* Red Link in Paragraph */
+    .safehands-why-section .why-card a {
+      color: #b12525;
+      text-decoration: none;
+      font-weight: 700;
+    }
+    .safehands-why-section .why-card a:hover {
+      text-decoration: underline;
+    }
+
+    /* Mobile Responsive */
+    @media (max-width: 992px) {
+      .safehands-why-section .why-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 768px) {
+      .safehands-why-section .why-outer-box { padding: 40px 20px; }
+      .safehands-why-section .why-main-title { font-size: 28px; margin-bottom: 30px; }
+      .safehands-why-section .why-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+
+  <!-- SECTION HTML -->
+  <div class="container">
+    <div class="why-outer-box">
+      
+      <h2 class="why-main-title">Why Choose Safehands Security Services</h2>
+      
+      <div class="why-grid">
+        
+        <!-- Card 1 -->
+        <div class="why-card">
+          <h3>Specialized Security<br>Solutions</h3>
+          <p>We don't have one-size-fits-all security solutions; rather, we develop individual security plans specifically designed to meet your security needs. May it be to protect your home, property or an event, we leave no stone unturned to ensure your ultimate protection. Our <a href="https://www.safehandssecurityservices.com.au/services/security-guards-adelaide-services/" target="_blank" rel="noopener">security specialists in Adelaide</a> are trained devising a security plan that is fool-proof.</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="why-card">
+          <h3>Security with Track<br>Record</h3>
+          <p>As professional security service providers in Adelaide, we don't make foul claims of excellence, rather, we have a proud legacy and a shining track record in providing all kinds of security services on different occasions.</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="why-card">
+          <h3>Client-First Approach</h3>
+          <p>Being a top security company in Adelaide, our priority remains our customers no matter what. Your protection is our ultimate objective, and we enjoy great pride in providing secure surroundings to improve your living.</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ======================================================= -->
+<!-- SECURITY MECHANISM SECTION (Smaller Text)               -->
+<!-- ======================================================= -->
+<div class="safehands-mechanism-section">
+  
+  <!-- GOOGLE FONTS IMPORT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Titillium+Web:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- SECTION SPECIFIC CSS -->
+  <style>
+    .safehands-mechanism-section { 
+      background: #f8f9fa; /* Halka grey background */
+      padding: 60px 0 80px; 
+      font-family: 'Lato', system-ui, sans-serif;
+    }
+    .safehands-mechanism-section .container { 
+      max-width: 1180px; 
+      margin: 0 auto; 
+      padding: 0 24px; 
+    }
+    
+    /* Outer White Box */
+    .safehands-mechanism-section .mech-box {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 60px 50px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+      max-width: 1050px;
+      margin: 0 auto;
+    }
+    
+    /* Main Heading */
+    .safehands-mechanism-section .mech-title { 
+      text-align: center;
+      font-family: 'Titillium Web', sans-serif; 
+      font-size: 36px; /* Heading ka size thoda adjust kiya */
+      color: #111; 
+      font-weight: 700; 
+      margin-bottom: 24px;
+      line-height: 1.3;
+    }
+    
+    /* Top Paragraphs (Text chota kiya) */
+    .safehands-mechanism-section .mech-desc {
+      text-align: center;
+      font-size: 15px; /* 16px se 15px kar diya */
+      color: #555;
+      line-height: 1.7; /* Line height thoda kam kiya */
+      margin-bottom: 16px;
+    }
+    .safehands-mechanism-section .mech-desc:last-of-type {
+      margin-bottom: 35px; /* List se pehle space */
+    }
+    
+    /* 2-Column List Grid */
+    .safehands-mechanism-section .mech-list-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px 40px; /* Row gap thoda kam kiya */
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    
+    /* Single List Item (Text chota kiya) */
+    .safehands-mechanism-section .mech-list-item {
+      display: flex;
+      align-items: center; 
+      gap: 12px;
+      font-size: 14.5px; /* List ke text ka size chota kiya */
+      color: #444;
+      line-height: 1.5;
+    }
+    
+    /* Shield Icon SVG */
+    .safehands-mechanism-section .mech-list-item svg {
+      flex-shrink: 0;
+      width: 18px; /* Icon ko bhi thoda chota kiya taake text se match kare */
+      height: 18px;
+      color: #555; 
+    }
+
+    /* Mobile Responsive */
+    @media (max-width: 768px) {
+      .safehands-mechanism-section .mech-box { padding: 40px 24px; }
+      .safehands-mechanism-section .mech-title { font-size: 26px; }
+      .safehands-mechanism-section .mech-list-grid { 
+        grid-template-columns: 1fr; 
+        gap: 12px;
+      }
+    }
+  </style>
+
+  <!-- SECTION HTML -->
+  <div class="container">
+    <div class="mech-box">
+      
+      <h2 class="mech-title">Our Security Mechanism &amp; Operational Capacity</h2>
+      
+      <p class="mech-desc">Imagine being able to sleep soundly knowing you, your property and business are protected because you've taken steps to deter danger. Courtesy your premier security company in Adelaide</p>
+      
+      <p class="mech-desc">Backed by our state-of-the-art Security Operation Center (SOC), we ensure high-degree of competence from our security personal. Moreover, our security firm aims to take foolproof safety measures to achieve threshold of excellence in delivering best security services in Adelaide &amp; also surrounding areas by assuring:</p>
+      
+      <!-- 2-Column List -->
+      <div class="mech-list-grid">
+        
+        <!-- Left Column Items -->
+        <div class="mech-list-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><polyline points="9 12 11 14 15 10"></polyline></svg>
+          <span>Safety checks</span>
+        </div>
+        
+        <div class="mech-list-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><polyline points="9 12 11 14 15 10"></polyline></svg>
+          <span>Coordinating Emergency Response</span>
+        </div>
+
+        <div class="mech-list-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><polyline points="9 12 11 14 15 10"></polyline></svg>
+          <span>Rigorous Security Monitoring mechanism</span>
+        </div>
+
+        <div class="mech-list-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><polyline points="9 12 11 14 15 10"></polyline></svg>
+          <span>24/7 Security Surveillance</span>
+        </div>
+
+        <div class="mech-list-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><polyline points="9 12 11 14 15 10"></polyline></svg>
+          <span>Ensuring Discipline of Security Guards</span>
+        </div>
+
+        <div class="mech-list-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><polyline points="9 12 11 14 15 10"></polyline></svg>
+          <span>Site Specific Security Training</span>
+        </div>
+
+        <div class="mech-list-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><polyline points="9 12 11 14 15 10"></polyline></svg>
+          <span>Ensuring Backup Security Equipment for emergencies</span>
+        </div>
+
+        <div class="mech-list-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><polyline points="9 12 11 14 15 10"></polyline></svg>
+          <span>Effective emergency Response Mechanism.</span>
+        </div>
+
+        <div class="mech-list-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><polyline points="9 12 11 14 15 10"></polyline></svg>
+          <span>Adherence and compliance with local security laws</span>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+<!-- ======================================================= -->
+<!-- HIRE US / APPOINTMENT SECTION (Fixed Background & Box)  -->
+<!-- ======================================================= -->
+<div class="safehands-cta-section">
+  
+  <!-- GOOGLE FONTS IMPORT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Titillium+Web:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- SECTION SPECIFIC CSS -->
+  <style>
+    .safehands-cta-section { 
+      background: #f8f9fa; 
+      padding: 60px 0 80px; 
+      font-family: 'Lato', system-ui, sans-serif;
+    }
+    .safehands-cta-section .container { 
+      max-width: 1180px; 
+      margin: 0 auto; 
+      padding: 0 24px; 
+    }
+    
+    /* Image and Form Wrapper (Jo tumhare screenshot mein rounded corners wala box hai) */
+    .safehands-cta-section .cta-wrapper {
+      position: relative;
+      border-radius: 12px;
+      overflow: hidden;
+      
+      /* Yahan Fixed Background Image lagi hai */
+      background-image: url('https://www.safehandssecurityservices.com.au/wp-content/uploads/2025/01/case-study.webp');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed; /* Parallax Effect */
+      
+      box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+    }
+    
+    /* Halka Dark Overlay taake text clear padhne aaye */
+    .safehands-cta-section .cta-wrapper::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(10, 25, 45, 0.5); 
+      z-index: 1;
+    }
+
+    .safehands-cta-section .cta-grid {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      padding: 80px 60px;
+      align-items: center;
+    }
+
+    /* ===== LEFT SIDE (TEXT) ===== */
+    .safehands-cta-section .cta-text h2 {
+      font-family: 'Titillium Web', sans-serif;
+      font-size: 34px;
+      color: #ffffff;
+      font-weight: 700;
+      line-height: 1.5;
+      margin-bottom: 35px;
+      max-width: 90%;
+    }
+
+    .safehands-cta-section .cta-btn {
+      display: inline-block;
+      background: transparent;
+      color: #ffffff;
+      padding: 14px 30px;
+      border: 1px solid #ffffff;
+      font-family: 'Lato', sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .safehands-cta-section .cta-btn:hover {
+      background: #ffffff;
+      color: #111;
+    }
+
+    /* ===== RIGHT SIDE (WHITE FORM BOX) ===== */
+    .safehands-cta-section .cta-form-box {
+      background: #ffffff;
+      padding: 45px 40px;
+      border-radius: 6px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    }
+
+    .safehands-cta-section .form-group {
+      margin-bottom: 20px;
+    }
+
+    .safehands-cta-section .form-group label {
+      display: block;
+      font-family: 'Lato', sans-serif;
+      font-size: 15px;
+      color: #333;
+      margin-bottom: 8px;
+    }
+
+    .safehands-cta-section .form-group input {
+      width: 100%;
+      padding: 12px 16px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-family: 'Lato', sans-serif;
+      font-size: 15px;
+      color: #333;
+      outline: none;
+      transition: 0.2s;
+    }
+    
+    .safehands-cta-section .form-group input::placeholder {
+      color: #999;
+    }
+
+    .safehands-cta-section .form-group input:focus {
+      border-color: #b12525;
+    }
+
+    .safehands-cta-section .submit-btn {
+      width: 100%;
+      background: #b12525; 
+      color: #ffffff;
+      padding: 15px;
+      border: none;
+      border-radius: 4px;
+      font-family: 'Lato', sans-serif;
+      font-size: 15px;
+      font-weight: 700;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: 0.3s;
+      margin-top: 5px;
+    }
+
+    .safehands-cta-section .submit-btn:hover {
+      background: #8e1d1d;
+    }
+
+    /* Mobile Responsive */
+    @media (max-width: 900px) {
+      .safehands-cta-section .cta-wrapper {
+        background-attachment: scroll; /* Mobile pe fix background sometimes buggy hota hai */
+      }
+      .safehands-cta-section .cta-grid {
+        grid-template-columns: 1fr;
+        padding: 40px 24px;
+        gap: 40px;
+      }
+      .safehands-cta-section .cta-text h2 {
+        font-size: 28px;
+        max-width: 100%;
+      }
+      .safehands-cta-section .cta-form-box {
+        padding: 30px 20px;
+      }
+    }
+  </style>
+
+  <!-- SECTION HTML -->
+  <div class="container">
+    <div class="cta-wrapper">
+      <div class="cta-grid">
+        
+        <!-- Left Text Area -->
+        <div class="cta-text">
+          <h2>Hire Us &amp; Stay Carefree of all your security concerns</h2>
+          <a href="https://www.safehandssecurityservices.com.au/contacts-us/" class="cta-btn" target="_blank" rel="noopener">MAKE AN APPOINTMENT</a>
+        </div>
+
+        <!-- Right Form Area -->
+        <div class="cta-form-box">
+          <form action="#" method="POST">
+            <div class="form-group">
+              <label>Name*</label>
+              <input type="text" placeholder="Sallar Abbas" required>
+            </div>
+            
+            <div class="form-group">
+              <label>Email*</label>
+              <input type="email" placeholder="info@safehandssecurityservices.com.au" required>
+            </div>
+            
+            <button type="submit" class="submit-btn">SUBMIT &amp; DOWNLOAD E-BOOK</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+<!-- ======================================================= -->
+<!-- INFRASTRUCTURE AND RESOURCES SECTION (With Shade)       -->
+<!-- ======================================================= -->
+<div class="safehands-infra-section">
+  
+  <!-- GOOGLE FONTS IMPORT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Titillium+Web:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- SECTION SPECIFIC CSS -->
+  <style>
+    .safehands-infra-section { 
+      background: #f4f5f7; /* Thoda aur light grey background taake box ki shade highlight ho */
+      padding: 60px 0 80px; 
+      font-family: 'Lato', system-ui, sans-serif;
+    }
+    .safehands-infra-section .container { 
+      max-width: 1180px; 
+      margin: 0 auto; 
+      padding: 0 24px; 
+    }
+    
+    /* Outer White Box with SHADE */
+    .safehands-infra-section .infra-box {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 50px;
+      /* Yeh hai wo shade jo screenshot mein hai */
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06), 0 1px 3px rgba(0,0,0,0.02); 
+      border: 1px solid #f0f0f0; /* Halki si border */
+      max-width: 1050px;
+      margin: 0 auto;
+    }
+    
+    /* Grid Layout (40% Image, 60% Text) */
+    .safehands-infra-section .infra-grid {
+      display: grid;
+      grid-template-columns: 40% 60%; 
+      gap: 40px;
+      align-items: center;
+    }
+
+    /* Image Wrapper */
+    .safehands-infra-section .infra-image img {
+      width: 100%;
+      height: 100%;
+      border-radius: 8px;
+      display: block;
+      object-fit: cover;
+    }
+
+    /* Right Side Content */
+    .safehands-infra-section .infra-content h2 {
+      font-family: 'Titillium Web', sans-serif;
+      font-size: 34px;
+      color: #111;
+      font-weight: 700;
+      margin-bottom: 20px;
+      line-height: 1.3;
+    }
+
+    .safehands-infra-section .infra-content p {
+      font-size: 15px;
+      color: #555;
+      line-height: 1.7;
+      margin-bottom: 30px;
+    }
+
+    /* List & Button Layout */
+    .safehands-infra-section .infra-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    /* Checklist */
+    .safehands-infra-section .infra-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .safehands-infra-section .infra-list li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 15px;
+      color: #444;
+    }
+
+    /* Shield SVG Icon */
+    .safehands-infra-section .infra-list svg {
+      flex-shrink: 0;
+      width: 18px;
+      height: 18px;
+      color: #555;
+    }
+
+    /* Button */
+    .safehands-infra-section .infra-btn {
+      display: inline-block;
+      background: #ffffff;
+      color: #b12525;
+      padding: 12px 24px;
+      border: 1px solid #b12525;
+      font-family: 'Lato', sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      text-decoration: none;
+      border-radius: 4px;
+      white-space: nowrap;
+      transition: 0.3s;
+    }
+
+    .safehands-infra-section .infra-btn:hover {
+      background: #b12525;
+      color: #ffffff;
+    }
+
+    /* Mobile Responsive */
+    @media (max-width: 900px) {
+      .safehands-infra-section .infra-box { padding: 30px 20px; }
+      .safehands-infra-section .infra-grid {
+        grid-template-columns: 1fr; 
+        gap: 30px;
+      }
+      .safehands-infra-section .infra-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+
+  <!-- SECTION HTML -->
+  <div class="container">
+    <div class="infra-box">
+      <div class="infra-grid">
+        
+        <!-- Left Side: Image -->
+        <div class="infra-image">
+          <img src="https://www.safehandssecurityservices.com.au/wp-content/uploads/2024/06/service-vl-image-1024x768.webp" alt="Safehands Infrastructure">
+        </div>
+
+        <!-- Right Side: Content -->
+        <div class="infra-content">
+          <h2>Our Infrastructure and Resources</h2>
+          <p>Safehands Security Services has an established infrastructure with corporate offices in Adelaide. Currently, we are having a smoothly operational security mechanism with licensed security personal equipped with latest security equipment. This enables us to ensure your safety &amp; protection in Adelaide.</p>
+          
+          <div class="infra-bottom">
+            <!-- Checklist -->
+            <ul class="infra-list">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><polyline points="9 12 11 14 15 10"></polyline></svg>
+                <span>Robust Security Officers and Supervisors</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><polyline points="9 12 11 14 15 10"></polyline></svg>
+                <span>Modern Rapid Response Vehicles</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><polyline points="9 12 11 14 15 10"></polyline></svg>
+                <span>Providing 24/7 Support</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><polyline points="9 12 11 14 15 10"></polyline></svg>
+                <span>Licensed Security Guards at your Service</span>
+              </li>
+            </ul>
+
+            <!-- Button -->
+            <a href="https://www.safehandssecurityservices.com.au/contacts-us/" class="infra-btn" target="_blank" rel="noopener">Get In Touch Now</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+<!-- ======================================================= -->
+<!-- COMPREHENSIVE SERVICES AT A GLANCE SECTION (Clickable)  -->
+<!-- ======================================================= -->
+<div class="safehands-glance-section">
+  
+  <!-- GOOGLE FONTS IMPORT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Titillium+Web:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- SECTION SPECIFIC CSS -->
+  <style>
+    .safehands-glance-section { 
+      background: #f4f5f7; 
+      padding: 60px 0 80px; 
+      font-family: 'Lato', system-ui, sans-serif;
+    }
+    .safehands-glance-section .container { 
+      max-width: 1180px; 
+      margin: 0 auto; 
+      padding: 0 24px; 
+    }
+    
+    /* Outer White Box */
+    .safehands-glance-section .glance-box {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 50px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+      border: 1px solid #f0f0f0; 
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    
+    /* Grid Layout (Left Text 45%, Right Dark Grid 55%) */
+    .safehands-glance-section .glance-grid {
+      display: grid;
+      grid-template-columns: 45% 55%;
+      gap: 40px;
+      align-items: center;
+    }
+
+    /* ===== LEFT SIDE (TEXT) ===== */
+    .safehands-glance-section .glance-text h4 {
+      font-family: 'Lato', sans-serif;
+      font-size: 15px;
+      color: #b12525;
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+
+    .safehands-glance-section .glance-text h2 {
+      font-family: 'Titillium Web', sans-serif;
+      font-size: 34px;
+      color: #111;
+      font-weight: 700;
+      margin-bottom: 20px;
+      line-height: 1.3;
+    }
+
+    .safehands-glance-section .glance-text p {
+      font-size: 15px;
+      color: #555;
+      line-height: 1.7;
+      margin-bottom: 25px;
+    }
+
+    .safehands-glance-section .glance-text a {
+      color: #b12525;
+      text-decoration: none;
+      font-weight: 700;
+    }
+    .safehands-glance-section .glance-text a:hover {
+      text-decoration: underline;
+    }
+
+    .safehands-glance-section .glance-btn {
+      display: inline-block;
+      background: #ffffff;
+      color: #b12525;
+      padding: 12px 28px;
+      border: 1px solid #b12525;
+      font-family: 'Lato', sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: 0.3s;
+      margin-top: 10px;
+    }
+
+    .safehands-glance-section .glance-btn:hover {
+      background: #b12525;
+      color: #ffffff;
+    }
+
+    /* ===== RIGHT SIDE (DARK BOX & GRID) ===== */
+    .safehands-glance-section .dark-services-box {
+      background: #2a2a2f; 
+      padding: 15px;
+      border-radius: 8px;
+    }
+
+    .safehands-glance-section .services-mini-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+
+    /* Single Mini Card */
+    .safehands-glance-section .mini-card {
+      background: #35353b; 
+      padding: 15px;
+      text-align: center;
+      border-radius: 4px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: 0.3s;
+      text-decoration: none; /* Link ki underline hatane ke liye */
+    }
+    
+    .safehands-glance-section .mini-card:hover {
+      background: #3f3f46;
+    }
+
+    /* Card Image */
+    .safehands-glance-section .mini-card img {
+      width: 100%;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 2px;
+      margin-bottom: 15px;
+      display: block;
+    }
+
+    /* Card Title */
+    .safehands-glance-section .mini-card h3 {
+      font-family: 'Lato', sans-serif;
+      font-size: 14px;
+      color: #ffffff;
+      font-weight: 700;
+      margin: 0;
+      text-transform: capitalize;
+    }
+
+    /* Mobile Responsive */
+    @media (max-width: 992px) {
+      .safehands-glance-section .glance-grid {
+        grid-template-columns: 1fr; 
+        gap: 40px;
+      }
+      .safehands-glance-section .glance-box {
+        padding: 30px 20px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .safehands-glance-section .services-mini-grid {
+        grid-template-columns: repeat(2, 1fr); 
+      }
+    }
+  </style>
+
+  <!-- SECTION HTML -->
+  <div class="container">
+    <div class="glance-box">
+      <div class="glance-grid">
+        
+        <!-- Left Text Area -->
+        <div class="glance-text">
+          <h4>Comprehensive Security Services at a Glance</h4>
+          <h2>We Offer Exceptional Security Services To Ensure Your Protection While You Are in Adelaide</h2>
+          <p>To achieve threshold of security &amp; protection, Safehands Security Services (SHSS) has the most <a href="https://www.safehandssecurityservices.com.au/services/security-guards-adelaide-services/" target="_blank" rel="noopener">well-trained security officers</a> adequately armed with latest security equipment. Above all, our experienced security advisors craft a tailored plan designed to meet your specific security needs. Additionally, offering reliable security solutions in Adelaide is our prime objective. Harnessing our extensive expertise, our corporate security services cater to a wide range of sectors, including bustling retail shops, banks, jewelry stores, and government organizations.</p>
+          <a href="https://www.safehandssecurityservices.com.au/services/" class="glance-btn" target="_blank" rel="noopener">SERVICES</a>
+        </div>
+
+        <!-- Right Dark Grid Area -->
+        <div class="dark-services-box">
+          <div class="services-mini-grid">
+            
+            <!-- Card 1: Alarms -->
+            <a href="https://www.safehandssecurityservices.com.au/services/alarm-installation-adelaide-services/" class="mini-card" target="_blank" rel="noopener">
+              <img src="https://www.safehandssecurityservices.com.au/wp-content/uploads/2025/01/Alarm-response.webp" alt="Alarms">
+              <h3>Alarms</h3>
+            </a>
+
+            <!-- Card 2: Mobile Patrols -->
+            <a href="https://www.safehandssecurityservices.com.au/services/mobile-patrols-adelaide-security/" class="mini-card" target="_blank" rel="noopener">
+              <img src="https://www.safehandssecurityservices.com.au/wp-content/uploads/2025/01/Mobile-patrols.webp" alt="Mobile Patrols">
+              <h3>Mobile Patrols</h3>
+            </a>
+
+            <!-- Card 3: Party Security -->
+            <a href="https://www.safehandssecurityservices.com.au/services/party-security-adelaide/" class="mini-card" target="_blank" rel="noopener">
+              <img src="https://www.safehandssecurityservices.com.au/wp-content/uploads/2025/01/Party-security.webp" alt="Party Security">
+              <h3>Party Security</h3>
+            </a>
+
+            <!-- Card 4: Door Supervisor -->
+            <a href="https://www.safehandssecurityservices.com.au/services/door-supervisor-security-services/" class="mini-card" target="_blank" rel="noopener">
+              <img src="https://www.safehandssecurityservices.com.au/wp-content/uploads/2025/01/Door-supervisor.webp" alt="Door Supervisor">
+              <h3>Door Supervisor</h3>
+            </a>
+
+            <!-- Card 5: K9 Unit -->
+            <a href="https://www.safehandssecurityservices.com.au/services/k9-unit/" class="mini-card" target="_blank" rel="noopener">
+              <img src="https://www.safehandssecurityservices.com.au/wp-content/uploads/2025/01/K9.webp" alt="K9 Unit">
+              <h3>K9 Unit</h3>
+            </a>
+
+            <!-- Card 6: Crowd Controlling -->
+            <a href="https://www.safehandssecurityservices.com.au/services/crowd-controller-adelaide/" class="mini-card" target="_blank" rel="noopener">
+              <img src="https://www.safehandssecurityservices.com.au/wp-content/uploads/2025/01/Crowd-control.webp" alt="Crowd Controlling">
+              <h3>Crowd Controlling</h3>
+            </a>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- ======================================================= -->
+<!-- SERVICES DARK GRID SECTION (8 Boxes with Links)         -->
+<!-- ======================================================= -->
+<div class="safehands-dark-grid-section">
+  
+  <!-- GOOGLE FONTS IMPORT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Titillium+Web:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- SECTION SPECIFIC CSS -->
+  <style>
+    .safehands-dark-grid-section { 
+      background: #f4f5f7; 
+      padding: 40px 0 80px; 
+      font-family: 'Lato', system-ui, sans-serif;
+    }
+    .safehands-dark-grid-section .container { 
+      max-width: 1180px; 
+      margin: 0 auto; 
+      padding: 0 24px; 
+    }
+    
+    /* Outer White Box */
+    .safehands-dark-grid-section .grid-wrapper {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+      border: 1px solid #f0f0f0; 
+      max-width: 1150px;
+      margin: 0 auto;
+    }
+
+    /* Dark Grid Container */
+    .safehands-dark-grid-section .dark-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+    }
+
+    /* Single Card */
+    .safehands-dark-grid-section .dark-card {
+      background: #3b3b41; /* Dark background for individual cards */
+      padding: 20px;
+      text-align: center;
+      border-radius: 6px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: 0.3s;
+      text-decoration: none;
+      border: 1px solid #444; /* Halki si border */
+    }
+    
+    .safehands-dark-grid-section .dark-card:hover {
+      background: #4a4a52;
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    }
+
+    /* Card Image */
+    .safehands-dark-grid-section .dark-card img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 4px;
+      margin-bottom: 20px;
+      display: block;
+    }
+
+    /* Card Title */
+    .safehands-dark-grid-section .dark-card h3 {
+      font-family: 'Lato', sans-serif;
+      font-size: 16px;
+      color: #ffffff;
+      font-weight: 700;
+      margin: 0;
+      line-height: 1.4;
+    }
+
+    /* Mobile Responsive */
+    @media (max-width: 1024px) {
+      .safehands-dark-grid-section .dark-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+    @media (max-width: 768px) {
+      .safehands-dark-grid-section .dark-grid { grid-template-columns: repeat(2, 1fr); }
+      .safehands-dark-grid-section .grid-wrapper { padding: 20px; }
+    }
+    @media (max-width: 480px) {
+      .safehands-dark-grid-section .dark-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+
+  <!-- SECTION HTML -->
+  <div class="container">
+    <div class="grid-wrapper">
+      <div class="dark-grid">
+        
+        <!-- 1. Residential Security -->
+        <a href="https://www.safehandssecurityservices.com.au/services/residential-security/" class="dark-card" target="_blank" rel="noopener">
+          <img src="https://www.safehandssecurityservices.com.au/wp-content/uploads/2025/01/Residential-security.webp" alt="Residential Security">
+          <h3>Residential Security</h3>
+        </a>
+
+        <!-- 2. Security Guards -->
+        <a href="https://www.safehandssecurityservices.com.au/services/security-guards-adelaide-services/" class="dark-card" target="_blank" rel="noopener">
+          <img src="https://www.safehandssecurityservices.com.au/wp-content/uploads/2025/01/Security-guard.webp" alt="Security Guards">
+          <h3>Security Guards</h3>
+        </a>
+
+        <!-- 3. Construction Security -->
+        <a href="https://www.safehandssecurityservices.com.au/services/construction-site-security-services-adelaide/" class="dark-card" target="_blank" rel="noopener">
+          <img src="https://www.safehandssecurityservices.com.au/wp-content/uploads/2025/01/Construction-security.webp" alt="Construction Security">
+          <h3>Construction Security</h3>
+        </a>
+
+        <!-- 4. Event Security -->
+        <a href="https://www.safehandssecurityservices.com.au/services/event-security-services-adelaide/" class="dark-card" target="_blank" rel="noopener">
+          <img src="https://www.safehandssecurityservices.com.au/wp-content/uploads/2025/01/Event-security.webp" alt="Event Security">
+          <h3>Event Security</h3>
+        </a>
+
+        <!-- 5. Loss Prevention -->
+        <a href="https://www.safehandssecurityservices.com.au/services/loss-prevention-security-services/" class="dark-card" target="_blank" rel="noopener">
+          <img src="https://www.safehandssecurityservices.com.au/wp-content/uploads/2025/01/Loss-prevention.webp" alt="Loss Prevention">
+          <h3>Loss Prevention</h3>
+        </a>
+
+        <!-- 6. CCTV Installation -->
+        <a href="https://www.safehandssecurityservices.com.au/services/cctv-installation-adelaide/" class="dark-card" target="_blank" rel="noopener">
+          <img src="https://www.safehandssecurityservices.com.au/wp-content/uploads/2025/01/CCTV-Installation.webp" alt="CCTV Installation">
+          <h3>CCTV Installation</h3>
+        </a>
+
+        <!-- 7. Home Security Systems -->
+        <a href="https://www.safehandssecurityservices.com.au/services/home-security-systems/" class="dark-card" target="_blank" rel="noopener">
+          <img src="https://www.safehandssecurityservices.com.au/wp-content/uploads/2025/01/Home-security.webp" alt="Home Security Systems">
+          <h3>Home Security Systems</h3>
+        </a>
+
+        <!-- 8. Cash in Transit Services -->
+        <a href="https://www.safehandssecurityservices.com.au/services/cash-in-transit-services-in-adelaide/" class="dark-card" target="_blank" rel="noopener">
+          <img src="https://www.safehandssecurityservices.com.au/wp-content/uploads/2025/01/Cash-in-transit.webp" alt="Cash in Transit Services">
+          <h3>Cash in Transit Services</h3>
+        </a>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- ======================================================= -->
+<!-- WHAT MAKES US EXCLUSIVE SECTION                         -->
+<!-- ======================================================= -->
+<div class="safehands-exclusive-section">
+  
+  <!-- GOOGLE FONTS IMPORT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Titillium+Web:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- SECTION SPECIFIC CSS -->
+  <style>
+    .safehands-exclusive-section { 
+      background: #f4f5f7; 
+      padding: 60px 0 80px; 
+      font-family: 'Lato', system-ui, sans-serif;
+    }
+    .safehands-exclusive-section .container { 
+      max-width: 1180px; 
+      margin: 0 auto; 
+      padding: 0 24px; 
+    }
+    
+    /* Outer White Box */
+    .safehands-exclusive-section .exclusive-box {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 60px 50px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+      border: 1px solid #f0f0f0; 
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    
+    /* Main Heading */
+    .safehands-exclusive-section .exclusive-title {
+      text-align: center;
+      font-family: 'Titillium Web', sans-serif;
+      font-size: 36px;
+      color: #111;
+      font-weight: 700;
+      margin-bottom: 50px;
+      line-height: 1.3;
+    }
+
+    /* Cards Layout */
+    .safehands-exclusive-section .cards-layout {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      max-width: 950px;
+      margin: 0 auto;
+    }
+
+    /* Single Card */
+    .safehands-exclusive-section .exclusive-card {
+      background: #ffffff;
+      border-radius: 8px;
+      padding: 35px 30px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+      border: 1px solid #f0f0f0;
+      width: calc(50% - 15px); /* 2 cards per row */
+      transition: 0.3s;
+    }
+
+    /* Center the last card */
+    .safehands-exclusive-section .exclusive-card:nth-child(3) {
+      width: 55%; /* Thoda wider on the bottom */
+    }
+
+    .safehands-exclusive-section .exclusive-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+    }
+
+    /* Card Heading */
+    .safehands-exclusive-section .exclusive-card h3 {
+      font-family: 'Titillium Web', sans-serif;
+      font-size: 22px;
+      color: #111;
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+
+    /* Card Paragraph */
+    .safehands-exclusive-section .exclusive-card p {
+      font-size: 15px;
+      color: #555;
+      line-height: 1.7;
+      margin: 0;
+    }
+    
+    /* Red Links inside cards */
+    .safehands-exclusive-section .exclusive-card a {
+      color: #b12525;
+      text-decoration: none;
+    }
+    .safehands-exclusive-section .exclusive-card a:hover {
+      text-decoration: underline;
+    }
+
+    /* Mobile Responsive */
+    @media (max-width: 900px) {
+      .safehands-exclusive-section .exclusive-box { padding: 40px 24px; }
+      .safehands-exclusive-section .exclusive-card { width: 100%; }
+      .safehands-exclusive-section .exclusive-card:nth-child(3) { width: 100%; }
+      .safehands-exclusive-section .exclusive-title { font-size: 28px; }
+    }
+  </style>
+
+  <!-- SECTION HTML -->
+  <div class="container">
+    <div class="exclusive-box">
+      
+      <h2 class="exclusive-title">What Makes Our Security Services Exclusive</h2>
+      
+      <div class="cards-layout">
+        
+        <!-- Card 1 -->
+        <div class="exclusive-card">
+          <h3>Risk Assessment</h3>
+          <p>Our prime focus is to address and handle threats, robbery, invasion, burglary, stalking and other crimes frequently happening in Adelaide. Our security officials find vulnerabilities to strengthen the defence and security of your property.</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="exclusive-card">
+          <h3>Experienced Security Officers</h3>
+          <p>We provide security professionals with well-established background &amp; expertise to foresee threats. We provide state-licensed <a href="https://www.safehandssecurityservices.com.au/services/security-guards-adelaide-services/" target="_blank" rel="noopener">security officers</a> who are vigilant, responsive and well-equipped to protect your assets and property.</p>
+        </div>
+
+        <!-- Card 3 (Bottom Center) -->
+        <div class="exclusive-card">
+          <h3>State of the art security Mechanism</h3>
+          <p>Our mechanism to ensure safety of your places, events or yourself is planned to ensure fool-proof security. Furthermore, we use modern-day technology to enhance our capacity in providing the ultimate security one desires is sharpened by sophisticated and high-tech security networks. With real-time tracking we cover blind spots and shut down danger in its path.</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- ======================================================= -->
+<!-- DEPENDABLE SOLUTIONS SECTION                            -->
+<!-- ======================================================= -->
+<div class="safehands-dependable-section">
+  
+  <!-- GOOGLE FONTS IMPORT (Agar pehle se nahi hai) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Titillium+Web:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- SECTION SPECIFIC CSS -->
+  <style>
+    .safehands-dependable-section { 
+      background: #ffffff; 
+      padding: 80px 0; 
+      font-family: 'Lato', system-ui, sans-serif;
+    }
+    .safehands-dependable-section .container { 
+      max-width: 950px; /* Text ko center aur tight rakhne ke liye */
+      margin: 0 auto; 
+      padding: 0 24px; 
+      text-align: center;
+    }
+    
+    /* Main Heading */
+    .safehands-dependable-section .dep-title {
+      font-family: 'Titillium Web', sans-serif;
+      font-size: 42px;
+      color: #111;
+      font-weight: 700;
+      line-height: 1.3;
+      margin-bottom: 30px;
+    }
+
+    /* Paragraphs */
+    .safehands-dependable-section .dep-content p {
+      font-size: 16px;
+      color: #555;
+      line-height: 1.8;
+      margin-bottom: 24px;
+    }
+    
+    .safehands-dependable-section .dep-content p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* Red Links */
+    .safehands-dependable-section .dep-content a {
+      color: #b12525;
+      text-decoration: none;
+      transition: 0.2s;
+    }
+    
+    .safehands-dependable-section .dep-content a:hover {
+      text-decoration: underline;
+    }
+
+    /* Mobile Responsive */
+    @media (max-width: 768px) {
+      .safehands-dependable-section { padding: 50px 0; }
+      .safehands-dependable-section .dep-title { font-size: 32px; }
+      .safehands-dependable-section .dep-content p { font-size: 15px; }
+    }
+  </style>
+
+  <!-- SECTION HTML -->
+  <div class="container">
+    
+    <h2 class="dep-title">Dependable Security Solutions You Can Rely On, Every Time</h2>
+    
+    <div class="dep-content">
+      <p>Safehands Security Services Pvt. Ltd. is a South Australian Security Company, providing comprehensive <a href="https://www.safehandssecurityservices.com.au/services/security-guards-adelaide-services/" target="_blank" rel="noopener">security and related services across Adelaide</a> with professionalism and reliability. Established in 2018, Safehands has earned its reputation as a reliable security partner through years of dedication and proven results.</p>
+      
+      <p>In an increasingly unpredictable world, the importance of reliable security services cannot be overstated. Our security company in Adelaide stands out as a trusted name in the security industry, known for its unwavering commitment to professionalism, innovation, and exceptional customer service. Moreover, our clients across various industries trust Safehands to secure their premises and operations, thanks to its rigorous standards, qualified expert security personnel, and innovative use of security equipment.</p>
+    </div>
+
+  </div>
+
+</div>
+
+
+<!-- ======================================================= -->
+<!-- COMPREHENSIVE SECURITY SERVICES SECTION                 -->
+<!-- ======================================================= -->
+<div class="safehands-comprehensive-section">
+  
+  <!-- GOOGLE FONTS IMPORT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Titillium+Web:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- SECTION SPECIFIC CSS -->
+  <style>
+    .safehands-comprehensive-section { 
+      background: #f4f5f7; 
+      padding: 60px 0 80px; 
+      font-family: 'Lato', system-ui, sans-serif;
+    }
+    .safehands-comprehensive-section .container { 
+      max-width: 1180px; 
+      margin: 0 auto; 
+      padding: 0 24px; 
+    }
+    
+    /* Main Wrapper with Background Image */
+    .safehands-comprehensive-section .comp-wrapper {
+      position: relative;
+      border-radius: 12px;
+      overflow: hidden;
+      /* Fixed Background Image */
+      background-image: url('https://www.safehandssecurityservices.com.au/wp-content/uploads/2025/01/1.webp');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed; 
+      box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+    }
+    
+    /* Dark Overlay */
+    .safehands-comprehensive-section .comp-wrapper::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(10, 15, 20, 0.7); /* Dark overlay taake white text pop kare */
+      z-index: 1;
+    }
+
+    /* Inner Grid Layout */
+    .safehands-comprehensive-section .comp-grid {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: 45% 55%; /* 45% image, 55% text */
+      gap: 40px;
+      padding: 60px;
+      align-items: center;
+    }
+
+    /* Left Side: Front Image */
+    .safehands-comprehensive-section .comp-image img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      display: block;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+      object-fit: cover;
+    }
+
+    /* Right Side: Content */
+    .safehands-comprehensive-section .comp-content {
+      color: #ffffff;
+    }
+
+    .safehands-comprehensive-section .comp-content h2 {
+      font-family: 'Titillium Web', sans-serif;
+      font-size: 36px;
+      color: #ffffff;
+      font-weight: 700;
+      line-height: 1.3;
+      margin-bottom: 20px;
+    }
+
+    .safehands-comprehensive-section .comp-content p {
+      font-size: 15px;
+      color: #e0e0e0;
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+
+    .safehands-comprehensive-section .comp-content a {
+      color: #ff6b6b; /* Thoda bright red taake dark bg par dikhe */
+      text-decoration: none;
+      font-weight: 700;
+    }
+    
+    .safehands-comprehensive-section .comp-content a:hover {
+      text-decoration: underline;
+    }
+
+    /* Checklist */
+    .safehands-comprehensive-section .comp-list {
+      list-style: none;
+      padding: 0;
+      margin: 25px 0 0 0;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .safehands-comprehensive-section .comp-list li {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 15px;
+      color: #ffffff;
+    }
+
+    .safehands-comprehensive-section .comp-list svg {
+      flex-shrink: 0;
+      width: 20px;
+      height: 20px;
+      color: #ffffff; /* White shield icons */
+    }
+
+    /* Mobile Responsive */
+    @media (max-width: 992px) {
+      .safehands-comprehensive-section .comp-wrapper {
+        background-attachment: scroll; /* Mobile pe fix background buggy hota hai */
+      }
+      .safehands-comprehensive-section .comp-grid {
+        grid-template-columns: 1fr; /* Ek ke neeche ek */
+        padding: 40px 24px;
+        gap: 30px;
+      }
+      .safehands-comprehensive-section .comp-content h2 {
+        font-size: 28px;
+      }
+    }
+  </style>
+
+  <!-- SECTION HTML -->
+  <div class="container">
+    <div class="comp-wrapper">
+      <div class="comp-grid">
+        
+        <!-- Left Side: Front Image -->
+        <div class="comp-image">
+          <img src="https://www.safehandssecurityservices.com.au/wp-content/uploads/2024/06/service-02-1024x768.webp" alt="Safehands Security Team">
+        </div>
+
+        <!-- Right Side: Content -->
+        <div class="comp-content">
+          <h2>Comprehensive Security Services From A Reputed Security Company</h2>
+          
+          <p>Our rigorous hiring process ensures that our <a href="https://www.safehandssecurityservices.com.au/services/security-guards-adelaide-services/" target="_blank" rel="noopener">security guards</a> have a clean background with thorough command on providing security duties. We take great pride in our team of experts, which is why we consistently invest in training, development, safety, support, welfare, and recognition programs. These efforts foster team loyalty, reduce attrition, and maintain the highest security standards. All these aspects make us a reputed security company in Adelaide, carrying a legacy of meeting the highest standards while providing security services.</p>
+          
+          <p>At Safehands Security Services, our guards are:</p>
+          
+          <!-- Checklist -->
+          <ul class="comp-list">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><polyline points="9 12 11 14 15 10"></polyline></svg>
+              <span>Trained to safeguard your customized security requirements</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><polyline points="9 12 11 14 15 10"></polyline></svg>
+              <span>Supervised and supported 24/7</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><polyline points="9 12 11 14 15 10"></polyline></svg>
+              <span>Guided by safer, effective and efficient operating procedures</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+</body>
+</html>
+
+

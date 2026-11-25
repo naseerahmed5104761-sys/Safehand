@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
             <!-- Dropdown Item -->
             <li class="has-dropdown">
-              <a href="#">Our Services ▾</a>
+              <a href="#">Our Services <span class="arrow">▾</span></a>
               <ul class="dropdown-menu">
                 <li><a href="https://www.safehandssecurityservices.com.au/services/alarm-installation-adelaide-services/" target="_blank">Alarm</a></li>
                 <li><a href="https://www.safehandssecurityservices.com.au/services/construction-site-security-services-adelaide/" target="_blank">Construction Security</a></li>
@@ -113,59 +113,86 @@ document.addEventListener("DOMContentLoaded", function() {
         color: #b12525;
       }
 
-      /* Dropdown Menu (box) */
+      /* Arrow rotate on hover */
+      .site-header .main-nav .has-dropdown > a .arrow {
+        display: inline-block;
+        font-size: 11px;
+        margin-left: 3px;
+        transition: transform 0.25s ease;
+      }
+      .site-header .main-nav .has-dropdown:hover > a .arrow {
+        transform: rotate(180deg);
+      }
+      .site-header .main-nav .has-dropdown:hover > a {
+        color: #b12525;
+      }
+
+      /* Dropdown Menu (box) - 2 columns */
       .site-header .main-nav .dropdown-menu {
         position: absolute;
-        top: 100%;
+        top: calc(100% + 16px);
+        left: 50%;
+        width: 480px;
         background: #ffffff;
-        min-width: 220px;
-
-        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1), 0 3px 10px rgba(0,0,0,0.05);
         border: 1px solid #f0f0f0;
-        border-radius: 4px;
+        border-top: 3px solid #b12525;
+        border-radius: 8px;
+        box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12), 0 4px 12px rgba(0, 0, 0, 0.06);
 
         opacity: 0;
         visibility: hidden;
-        transform: translateY(10px);
-        transition: all 0.2s ease;
+        transform: translateX(-50%) translateY(12px);
+        transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s;
 
-        /* Box padding: upar/neeche 0, left/right 20px */
-        padding: 0 20px;
+        padding: 12px;
         z-index: 100;
 
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2px 8px;
         align-items: stretch;
-        gap: 0; /* items ke beech koi gap nahi */
+      }
+
+      /* Invisible bridge so hover doesn't break between link and box */
+      .site-header .main-nav .dropdown-menu::before {
+        content: "";
+        position: absolute;
+        top: -20px;
+        left: 0;
+        width: 100%;
+        height: 20px;
       }
 
       .site-header .main-nav ul li.has-dropdown:hover .dropdown-menu {
         opacity: 1;
         visibility: visible;
-        transform: translateY(0);
+        transform: translateX(-50%) translateY(0);
       }
 
-      /* Dropdown list items: padding 0, line-height tight */
       .site-header .main-nav .dropdown-menu li {
         width: 100%;
         margin: 0;
         padding: 0;
-        line-height: 1;
       }
 
       .site-header .main-nav .dropdown-menu li a {
-        padding: 0;
-        line-height: 1;
+        padding: 10px 14px;
+        line-height: 1.4;
         font-size: 14px;
-        color: #666;
+        font-weight: 500;
+        color: #444;
         white-space: nowrap;
         display: block;
-        transition: 0.2s;
+        border-radius: 6px;
+        border-left: 3px solid transparent;
+        transition: background 0.2s, color 0.2s, padding-left 0.2s, border-color 0.2s;
       }
 
       .site-header .main-nav .dropdown-menu li a:hover {
-        background: #f8f9fa;
+        background: #fdf1f1;
         color: #b12525;
+        border-left-color: #b12525;
+        padding-left: 18px;
       }
 
       /* Call Now Button */
@@ -231,19 +258,35 @@ document.addEventListener("DOMContentLoaded", function() {
         /* Dropdown Mobile */
         .site-header .main-nav .dropdown-menu {
           position: static;
+          width: 100%;
+          left: auto;
           box-shadow: none;
           border: none;
+          border-radius: 0;
           opacity: 1;
           visibility: visible;
           transform: none;
           display: none;
+          grid-template-columns: 1fr;
+          gap: 0;
           background: #f8f9fa;
           padding: 0;
         }
 
+        .site-header .main-nav .dropdown-menu::before {
+          display: none;
+        }
+
         .site-header .main-nav .dropdown-menu li a {
-          padding: 10px 40px;
+          padding: 12px 40px;
           line-height: 1.4;
+          border-radius: 0;
+          border-left: none;
+        }
+
+        .site-header .main-nav .dropdown-menu li a:hover {
+          padding-left: 40px;
+          border-left: none;
         }
 
         .site-header .main-nav ul li.has-dropdown:hover .dropdown-menu {

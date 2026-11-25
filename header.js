@@ -289,8 +289,19 @@ document.addEventListener("DOMContentLoaded", function() {
           border-left: none;
         }
 
-        .site-header .main-nav ul li.has-dropdown:hover .dropdown-menu {
+        .site-header .main-nav ul li.has-dropdown:hover .dropdown-menu,
+        .site-header .main-nav ul li.has-dropdown.open .dropdown-menu {
           display: block;
+          opacity: 1;
+          visibility: visible;
+          transform: none;
+        }
+
+        .site-header .main-nav .has-dropdown:hover > a .arrow {
+          transform: none;
+        }
+        .site-header .main-nav .has-dropdown.open > a .arrow {
+          transform: rotate(180deg);
         }
 
         .site-header .mobile-toggle {
@@ -317,6 +328,17 @@ document.addEventListener("DOMContentLoaded", function() {
   if (mobileToggle && mainNav) {
     mobileToggle.addEventListener("click", function() {
       mainNav.classList.toggle("active");
+    });
+  }
+
+  // 5. Mobile: "Our Services" tap par dropdown open/close
+  const dropdownParent = document.querySelector(".has-dropdown");
+  if (dropdownParent) {
+    dropdownParent.querySelector(":scope > a").addEventListener("click", function(e) {
+      if (window.innerWidth <= 992) {
+        e.preventDefault();
+        dropdownParent.classList.toggle("open");
+      }
     });
   }
 });

@@ -113,13 +113,13 @@ document.addEventListener("DOMContentLoaded", function() {
         color: #b12525;
       }
 
-      /* Dropdown Menu - FIXED TO BE VERTICAL */
+      /* Dropdown Menu - PADDING FIX */
       .site-header .dropdown-menu {
         position: absolute;
         top: 100%;
         left: 0;
         background: #ffffff;
-        min-width: 240px; /* Width barha di */
+        min-width: 240px;
         box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
         border: 1px solid #eee;
         opacity: 0;
@@ -127,10 +127,11 @@ document.addEventListener("DOMContentLoaded", function() {
         transform: translateY(10px);
         transition: all 0.3s ease;
         border-radius: 4px;
-        padding: 10px 0;
-        z-index: 100;
         
-        /* YEH HAI MAIN FIX - Dropdown ko line se column mein laya hai */
+        /* Box ki andar ki padding (Upper/Neeche space) */
+        padding: 15px 0; 
+        
+        z-index: 100;
         display: flex;
         flex-direction: column; 
       }
@@ -143,13 +144,17 @@ document.addEventListener("DOMContentLoaded", function() {
 
       .site-header .dropdown-menu li {
         width: 100%;
+        margin: 0; /* Margin khatam kar di */
       }
 
+      /* Har row (item) ki padding */
       .site-header .dropdown-menu li a {
-        padding: 12px 20px;
+        padding: 8px 24px; /* Upar/neeche 8px, Left/Right 24px */
         font-size: 14px;
         color: #555;
         white-space: nowrap;
+        display: block;
+        transition: 0.2s;
       }
 
       .site-header .dropdown-menu li a:hover {
@@ -226,6 +231,11 @@ document.addEventListener("DOMContentLoaded", function() {
           transform: none;
           display: none;
           background: #f8f9fa;
+          padding: 0; /* Mobile pe outer padding 0 */
+        }
+        
+        .site-header .dropdown-menu li a {
+          padding: 12px 40px; /* Mobile pe thoda indented */
         }
 
         .site-header .main-nav ul li.has-dropdown:hover .dropdown-menu {

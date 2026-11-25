@@ -1,11 +1,11 @@
 // header.js
 document.addEventListener("DOMContentLoaded", function() {
-  
+
   // 1. Header ka HTML Structure
   const headerHTML = `
     <header class="site-header">
       <div class="container">
-        
+
         <!-- Logo -->
         <a href="#" class="logo">
           <img src="https://www.safehandssecurityservices.com.au/wp-content/uploads/2025/11/cropped-cropped-Untitled-design-28.webp" alt="Safehands Security Services">
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
             <li><a href="#">Home</a></li>
             <li><a href="#">Blog</a></li>
             <li><a href="#">Gallery</a></li>
-            
+
             <!-- Dropdown Item -->
             <li class="has-dropdown">
               <a href="#">Our Services ▾</a>
@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 <li><a href="https://www.safehandssecurityservices.com.au/services/cash-in-transit-services-in-adelaide/" target="_blank">Cash in Transit Services</a></li>
               </ul>
             </li>
-            
+
             <li><a href="#">Case Studies</a></li>
             <li><a href="#">About Us</a></li>
             <li><a href="#">Contact Us</a></li>
@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function() {
     <style>
       /* Reset & Basic */
       .site-header * { box-sizing: border-box; margin: 0; padding: 0; }
-      
+
       .site-header {
         background: #ffffff;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
@@ -113,28 +113,30 @@ document.addEventListener("DOMContentLoaded", function() {
         color: #b12525;
       }
 
-      /* Dropdown Menu - SIRF BOX KI PADDING */
-      .site-header .dropdown-menu {
+      /* Dropdown Menu (box) */
+      .site-header .main-nav .dropdown-menu {
         position: absolute;
         top: 100%;
         background: #ffffff;
         min-width: 220px;
-        
-        /* Shadow (Shade) */
+
         box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1), 0 3px 10px rgba(0,0,0,0.05);
-        
         border: 1px solid #f0f0f0;
+        border-radius: 4px;
+
         opacity: 0;
         visibility: hidden;
         transform: translateY(10px);
         transition: all 0.2s ease;
-        border-radius: 4px;
-        
-        /* YAHAN BOX KI PADDING DI HAI (Uper/Neeche 10px, Left/Right 0) */
-        padding: 20px 20px; 
+
+        /* Box padding: upar/neeche 0, left/right 20px */
+        padding: 0 20px;
         z-index: 100;
+
         display: flex;
-        flex-direction: column; 
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0; /* items ke beech koi gap nahi */
       }
 
       .site-header .main-nav ul li.has-dropdown:hover .dropdown-menu {
@@ -143,23 +145,25 @@ document.addEventListener("DOMContentLoaded", function() {
         transform: translateY(0);
       }
 
-      .site-header .dropdown-menu li {
+      /* Dropdown list items: padding 0, line-height tight */
+      .site-header .main-nav .dropdown-menu li {
         width: 100%;
         margin: 0;
+        padding: 0;
+        line-height: 1;
       }
 
-      /* Yahan LI OR A KI PADDING KO BILKUL NAHI CHHERA (Wesa hi hai) */
-      .site-header .dropdown-menu li a {
-        padding: 0px 0px; /* Tumhari file wali setting */
+      .site-header .main-nav .dropdown-menu li a {
+        padding: 0;
+        line-height: 1;
         font-size: 14px;
         color: #666;
-        line-hight: 0;
         white-space: nowrap;
         display: block;
         transition: 0.2s;
       }
 
-      .site-header .dropdown-menu li a:hover {
+      .site-header .main-nav .dropdown-menu li a:hover {
         background: #f8f9fa;
         color: #b12525;
       }
@@ -204,13 +208,14 @@ document.addEventListener("DOMContentLoaded", function() {
           display: none;
           padding: 20px 0;
         }
-        
+
         .site-header .main-nav.active {
           display: block;
         }
 
         .site-header .main-nav ul {
           flex-direction: column;
+          align-items: stretch;
           gap: 0;
         }
 
@@ -224,7 +229,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
 
         /* Dropdown Mobile */
-        .site-header .dropdown-menu {
+        .site-header .main-nav .dropdown-menu {
           position: static;
           box-shadow: none;
           border: none;
@@ -233,11 +238,12 @@ document.addEventListener("DOMContentLoaded", function() {
           transform: none;
           display: none;
           background: #f8f9fa;
-          padding: 0; 
+          padding: 0;
         }
-        
-        .site-header .dropdown-menu li a {
-          padding: 10px 40px; 
+
+        .site-header .main-nav .dropdown-menu li a {
+          padding: 10px 40px;
+          line-height: 1.4;
         }
 
         .site-header .main-nav ul li.has-dropdown:hover .dropdown-menu {
@@ -247,7 +253,7 @@ document.addEventListener("DOMContentLoaded", function() {
         .site-header .mobile-toggle {
           display: block;
         }
-        
+
         .site-header .btn-call {
           display: none;
         }

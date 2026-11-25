@@ -131,8 +131,7 @@ document.addEventListener("DOMContentLoaded", function() {
         border-radius: 4px;
         
         /* YAHAN BOX KI PADDING DI HAI (Uper/Neeche 10px, Left/Right 0) */
-        padding: 10px 20px; 
-        
+        padding: 20px 20px; 
         z-index: 100;
         display: flex;
         flex-direction: column; 
@@ -151,7 +150,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
       /* Yahan LI OR A KI PADDING KO BILKUL NAHI CHHERA (Wesa hi hai) */
       .site-header .dropdown-menu li a {
-        padding: 0px 20px; /* Tumhari file wali setting */
+        padding: 0px 0px; /* Tumhari file wali setting */
         font-size: 14px;
         color: #666;
         white-space: nowrap;

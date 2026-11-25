@@ -113,21 +113,27 @@ document.addEventListener("DOMContentLoaded", function() {
         color: #b12525;
       }
 
-      /* Dropdown Menu */
+      /* Dropdown Menu (SHADOW & PADDING FIXED) */
       .site-header .dropdown-menu {
         position: absolute;
         top: 100%;
-       
+        left: 0;
         background: #ffffff;
         min-width: 220px;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-        border: 1px solid #eee;
+        
+        /* Shadow (Shade) */
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1), 0 3px 10px rgba(0,0,0,0.05);
+        
+        border: 1px solid #f0f0f0;
         opacity: 0;
         visibility: hidden;
         transform: translateY(10px);
         transition: all 0.2s ease;
         border-radius: 4px;
-        padding: 8px, 8px; 
+        
+        /* Padding: Top/Bottom 10px, Left/Right 0 */
+        padding: 10px 0; 
+        
         z-index: 100;
         display: flex;
         flex-direction: column; 
@@ -146,10 +152,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
       /* Har row (item) ki padding - FIXED */
       .site-header .dropdown-menu li a {
-        padding: 0px 20px; /* Top/Bottom 2px, Left/Right 20px */
+        /* Top/Bottom 6px, Left/Right 20px */
+        padding: 6px 20px; 
         font-size: 14px;
-        line-height: 0; /* LINE HEIGHT FIX - Space kam karne ke liye */
-        color: #666;
+        line-height: 1.3; 
+        color: #555;
         white-space: nowrap;
         display: block;
         transition: 0.2s;

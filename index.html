@@ -2853,10 +2853,12 @@ videoContainer.addEventListener('click', function() {
 
 </div>
 
+
+
   <!-- ======================================================= -->
-<!-- LICENSES & REGISTRATION SECTION (Bigger Logos)          -->
+<!-- OUR CLIENTS SECTION                                     -->
 <!-- ======================================================= -->
-<div class="safehands-licenses-section">
+<div class="safehands-clients-section">
   
   <!-- GOOGLE FONTS IMPORT -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -2865,213 +2867,190 @@ videoContainer.addEventListener('click', function() {
 
   <!-- SECTION SPECIFIC CSS -->
   <style>
-    .safehands-licenses-section { 
+    .safehands-clients-section { 
       background: #f4f5f7; 
       padding: 60px 0 80px; 
       font-family: 'Lato', system-ui, sans-serif;
     }
-    .safehands-licenses-section .container { 
+    .safehands-clients-section .container { 
       max-width: 1180px; 
       margin: 0 auto; 
       padding: 0 24px; 
     }
     
-    /* Outer White Box */
-    .safehands-licenses-section .license-box {
+    /* Heading Area */
+    .safehands-clients-section .client-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .safehands-clients-section .client-title {
+      font-family: 'Titillium Web', sans-serif;
+      font-size: 28px;
+      color: #333;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+    }
+
+    /* Dotted Divider */
+    .safehands-clients-section .client-divider {
+      width: 60px;
+      height: 2px;
+      border-bottom: 2px dotted #1a73e8; /* Blue dotted line */
+      margin: 0 auto;
+    }
+
+    /* Main White Box for Grid */
+    .safehands-clients-section .client-box {
       background: #ffffff;
-      border-radius: 12px;
-      padding: 50px 30px;
+      border-radius: 8px;
+      padding: 20px;
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
       border: 1px solid #f0f0f0; 
-      max-width: 1100px;
-      margin: 0 auto;
-    }
-    
-    /* Heading Area */
-    .safehands-licenses-section .license-header {
-      text-align: center;
-      margin-bottom: 50px;
-    }
-
-    .safehands-licenses-section .license-title {
-      font-family: 'Titillium Web', sans-serif;
-      font-size: 36px;
-      color: #b12525;
-      font-weight: 700;
-      line-height: 1.3;
-      margin-bottom: 12px;
-    }
-
-    .safehands-licenses-section .license-subtitle {
-      font-size: 15px;
-      color: #666;
-      margin-bottom: 15px;
-    }
-
-    /* Red Line */
-    .safehands-licenses-section .license-divider {
-      width: 80px;
-      height: 2px;
-      background: #b12525;
+      max-width: 950px;
       margin: 0 auto;
     }
 
-    /* 4-Column Grid */
-    .safehands-licenses-section .license-grid {
+    /* 6-Column Grid Layout */
+    .safehands-clients-section .client-grid {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 20px;
+      grid-template-columns: repeat(6, 1fr);
+      border-top: 1px solid #eaeaea;
+      border-left: 1px solid #eaeaea;
     }
 
-    /* Single Card */
-    .safehands-licenses-section .license-card {
-      background: #ffffff;
-      border: 1px solid #eaeaea;
-      border-radius: 4px;
-      padding: 30px 20px;
-      display: flex;
-      flex-direction: column;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
-      transition: 0.3s;
-    }
-
-    .safehands-licenses-section .license-card:hover {
-      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-      transform: translateY(-3px);
-    }
-
-    /* Logo Area (BADA KAR DIYA HAI) */
-    .safehands-licenses-section .license-logo {
-      height: 120px; /* Pehle 60px tha, ab 120px kar diya */
+    /* Individual Logo Box */
+    .safehands-clients-section .client-item {
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-bottom: 25px;
+      padding: 15px; /* Space around logo */
+      border-right: 1px solid #eaeaea;
+      border-bottom: 1px solid #eaeaea;
+      aspect-ratio: 1 / 1; /* Perfect square */
+      background: #fff;
+      transition: 0.3s;
     }
 
-    .safehands-licenses-section .license-logo img {
+    .safehands-clients-section .client-item:hover {
+      box-shadow: inset 0 0 15px rgba(0,0,0,0.05);
+      z-index: 2;
+    }
+
+    .safehands-clients-section .client-item img {
       max-width: 100%;
       max-height: 100%;
       object-fit: contain;
     }
 
-    /* Divider/Line inside card */
-    .safehands-licenses-section .card-divider {
-      width: 30px;
-      height: 2px;
-      background: #b12525;
-      margin-bottom: 15px;
+    /* View All Clients Button */
+    .safehands-clients-section .client-btn-wrapper {
+      text-align: center;
+      margin-top: 40px;
     }
 
-    /* Card Content */
-    .safehands-licenses-section .license-card h3 {
-      font-family: 'Titillium Web', sans-serif;
-      font-size: 18px;
-      color: #111;
-      font-weight: 700;
-      line-height: 1.3;
-      margin-bottom: 15px;
-    }
-
-    .safehands-licenses-section .license-card p {
-      font-size: 14px;
-      color: #555;
-      line-height: 1.6;
-      margin-bottom: 25px;
-      flex: 1; 
-    }
-
-    /* View PDF Button */
-    .safehands-licenses-section .btn-pdf {
+    .safehands-clients-section .client-btn {
       display: inline-block;
-      background: #fdf5f5;
+      background: #ffffff;
       color: #b12525;
-      padding: 10px 20px;
+      padding: 12px 30px;
+      border: 1px solid #b12525;
+      font-family: 'Lato', sans-serif;
       font-size: 14px;
-      font-weight: 600;
+      font-weight: 700;
       text-decoration: none;
-      border: 1px solid #f0dcdc;
       border-radius: 4px;
-      transition: 0.2s;
-      align-self: flex-start;
+      transition: 0.3s;
     }
 
-    .safehands-licenses-section .btn-pdf:hover {
+    .safehands-clients-section .client-btn:hover {
       background: #b12525;
       color: #ffffff;
     }
 
     /* Mobile Responsive */
-    @media (max-width: 992px) {
-      .safehands-licenses-section .license-grid { grid-template-columns: repeat(2, 1fr); }
+    @media (max-width: 900px) {
+      .safehands-clients-section .client-grid { grid-template-columns: repeat(4, 1fr); }
     }
     @media (max-width: 600px) {
-      .safehands-licenses-section .license-grid { grid-template-columns: 1fr; }
-      .safehands-licenses-section .license-title { font-size: 28px; }
-      .safehands-licenses-section .license-logo { height: 90px; }
+      .safehands-clients-section .client-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+    @media (max-width: 400px) {
+      .safehands-clients-section .client-grid { grid-template-columns: repeat(2, 1fr); }
     }
   </style>
 
   <!-- SECTION HTML -->
   <div class="container">
-    <div class="license-box">
-      
-      <!-- Heading -->
-      <div class="license-header">
-        <h2 class="license-title">Licenses &amp; Registration</h2>
-        <p class="license-subtitle">View Licenses, Registrations &amp; Insurances of Safehands Security Services</p>
-        <div class="license-divider"></div>
-      </div>
+    
+    <!-- Heading -->
+    <div class="client-header">
+      <h2 class="client-title">OUR CLIENTS</h2>
+      <div class="client-divider"></div>
+    </div>
 
-      <!-- Grid -->
-      <div class="license-grid">
+    <!-- Grid Box -->
+    <div class="client-box">
+      <div class="client-grid">
         
-        <!-- Card 1 -->
-        <div class="license-card">
-          <div class="license-logo">
-            <img src="https://www.safehandssecurityservices.com.au/wp-content/uploads/2024/07/Untitled-design-72-1536x1028.webp" alt="Return to Work SA Logo">
-          </div>
-          <div class="card-divider"></div>
-          <h3>Registration<br>Certificate</h3>
-          <p>Employer number:<br>29113104</p>
-          <a href="https://www.safehandssecurityservices.com.au/wp-content/uploads/2024/07/RTWSA-2025.pdf" class="btn-pdf" target="_blank" rel="noopener">View PDF</a>
-        </div>
+        <!-- Row 1 -->
+        <div class="client-item"><img src="https://www.safehandssecurityservices.com.au/wp-content/uploads/2024/12/37.webp" alt="Client Logo"></div>
+        <div class="client-item"><img src="https://www.safehandssecurityservices.com.au/wp-content/uploads/2024/12/36.webp" alt="Client Logo"></div>
+        <div class="client-item"><img src="https://www.safehandssecurityservices.com.au/wp-content/uploads/2024/12/35.webp" alt="Client Logo"></div>
+        <div class="client-item"><img src="https://www.safehandssecurityservices.com.au/wp-content/uploads/2024/12/34.webp" alt="Client Logo"></div>
+        <div class="client-item"><img src="https://www.safehandssecurityservices.com.au/wp-content/uploads/2024/12/33.webp" alt="Client Logo"></div>
+        <div class="client-item"><img src="https://www.safehandssecurityservices.com.au/wp-content/uploads/2024/12/32.webp" alt="Client Logo"></div>
+        
+        <!-- Row 2 -->
+        <div class="client-item"><img src="https://www.safehandssecurityservices.com.au/wp-content/uploads/2024/12/31.webp" alt="Client Logo"></div>
+        <div class="client-item"><img src="https://www.safehandssecurityservices.com.au/wp-content/uploads/2024/12/30.webp" alt="Client Logo"></div>
+        <div class="client-item"><img src="https://www.safehandssecurityservices.com.au/wp-content/uploads/2024/12/29.webp" alt="Client Logo"></div>
+        <div class="client-item"><img src="https://www.safehandssecurityservices.com.au/wp-content/uploads/2024/12/28.webp" alt="Client Logo"></div>
+        <div class="client-item"><img src="https://www.safehandssecurityservices.com.au/wp-content/uploads/2024/12/27.webp" alt="Client Logo"></div>
+        <div class="client-item"><img src="https://www.safehandssecurityservices.com.au/wp-content/uploads/2024/12/26.webp" alt="Client Logo"></div>
+        
+        <!-- Row 3 -->
+        <div class="client-item"><img src="https://www.safehandssecurityservices.com.au/wp-content/uploads/2024/12/25.webp" alt="Client Logo"></div>
+        <div class="client-item"><img src="https://www.safehandssecurityservices.com.au/wp-content/uploads/2024/12/24.webp" alt="Client Logo"></div>
+        <div class="client-item"><img src="https://www.safehandssecurityservices.com.au/wp-content/uploads/2024/12/23.webp" alt="Client Logo"></div>
+        <div class="client-item"><img src="https://www.safehandssecurityservices.com.au/wp-content/uploads/2024/12/22.webp" alt="Client Logo"></div>
+        <div class="client-item"><img src="https://www.safehandssecurityservices.com.au/wp-content/uploads/2024/12/21.webp" alt="Client Logo"></div>
+        <div class="client-item"><img src="https://www.safehandssecurityservices.com.au/wp-content/uploads/2024/12/20.webp" alt="Client Logo"></div>
 
-        <!-- Card 2 -->
-        <div class="license-card">
-          <div class="license-logo">
-            <img src="https://www.safehandssecurityservices.com.au/wp-content/uploads/2024/07/Untitled-design-74-1536x1028.webp" alt="Government of South Australia Logo">
-          </div>
-          <div class="card-divider"></div>
-          <h3>Agents<br>License/Reg</h3>
-          <p>Lic/Reg number: ISL-<br>283786</p>
-          <a href="https://www.safehandssecurityservices.com.au/wp-content/uploads/2024/07/ISL283786.pdf" class="btn-pdf" target="_blank" rel="noopener">View PDF</a>
-        </div>
+        <!-- Row 4 -->
+        <div class="client-item"><img src="https://www.safehandssecurityservices.com.au/wp-content/uploads/2024/12/19.webp" alt="Client Logo"></div>
+        <div class="client-item"><img src="https://www.safehandssecurityservices.com.au/wp-content/uploads/2024/12/18.webp" alt="Client Logo"></div>
+        <div class="client-item"><img src="https://www.safehandssecurityservices.com.au/wp-content/uploads/2024/12/17.webp" alt="Client Logo"></div>
+        <div class="client-item"><img src="https://www.safehandssecurityservices.com.au/wp-content/uploads/2024/12/16.webp" alt="Client Logo"></div>
+        <div class="client-item"><img src="https://www.safehandssecurityservices.com.au/wp-content/uploads/2024/12/15.webp" alt="Client Logo"></div>
+        <div class="client-item"><img src="https://www.safehandssecurityservices.com.au/wp-content/uploads/2024/12/14.webp" alt="Client Logo"></div>
 
-        <!-- Card 3 -->
-        <div class="license-card">
-          <div class="license-logo">
-            <img src="https://www.safehandssecurityservices.com.au/wp-content/uploads/2024/07/Untitled-design-73-1536x1028.webp" alt="ASR Underwriting Agencies Logo">
-          </div>
-          <div class="card-divider"></div>
-          <h3>Insurance<br>Certificate</h3>
-          <p>Policy No:<br>171608N4821S</p>
-          <a href="https://www.safehandssecurityservices.com.au/wp-content/uploads/2024/07/Public-Liabiliti-2024.pdf" class="btn-pdf" target="_blank" rel="noopener">View PDF</a>
-        </div>
+        <!-- Row 5 -->
+        <div class="client-item"><img src="https://www.safehandssecurityservices.com.au/wp-content/uploads/2024/12/13.webp" alt="Client Logo"></div>
+        <div class="client-item"><img src="https://www.safehandssecurityservices.com.au/wp-content/uploads/2024/12/12.webp" alt="Client Logo"></div>
+        <div class="client-item"><img src="https://www.safehandssecurityservices.com.au/wp-content/uploads/2024/12/11.webp" alt="Client Logo"></div>
+        <div class="client-item"><img src="https://www.safehandssecurityservices.com.au/wp-content/uploads/2024/12/10.webp" alt="Client Logo"></div>
+        <div class="client-item"><img src="https://www.safehandssecurityservices.com.au/wp-content/uploads/2024/12/9.webp" alt="Client Logo"></div>
+        <div class="client-item"><img src="https://www.safehandssecurityservices.com.au/wp-content/uploads/2024/12/8.webp" alt="Client Logo"></div>
 
-        <!-- Card 4 -->
-        <div class="license-card">
-          <div class="license-logo">
-            <img src="https://www.safehandssecurityservices.com.au/wp-content/uploads/2024/07/Untitled-design-71-1536x1028.webp" alt="ASIC Logo">
-          </div>
-          <div class="card-divider"></div>
-          <h3>ASIC<br>Registration</h3>
-          <p>(ABN) Number: 96<br>635 297 302</p>
-          <a href="https://www.safehandssecurityservices.com.au/wp-content/uploads/2024/07/ASIC.pdf" class="btn-pdf" target="_blank" rel="noopener">View PDF</a>
-        </div>
+        <!-- Row 6 -->
+        <div class="client-item"><img src="https://www.safehandssecurityservices.com.au/wp-content/uploads/2024/12/7.webp" alt="Client Logo"></div>
+        <div class="client-item"><img src="https://www.safehandssecurityservices.com.au/wp-content/uploads/2024/12/6.webp" alt="Client Logo"></div>
+        <div class="client-item"><img src="https://www.safehandssecurityservices.com.au/wp-content/uploads/2024/12/5.webp" alt="Client Logo"></div>
+        <div class="client-item"><img src="https://www.safehandssecurityservices.com.au/wp-content/uploads/2024/12/4.webp" alt="Client Logo"></div>
+        <div class="client-item"><img src="https://www.safehandssecurityservices.com.au/wp-content/uploads/2024/12/3.webp" alt="Client Logo"></div>
+        <div class="client-item"><img src="https://www.safehandssecurityservices.com.au/wp-content/uploads/2024/12/2.webp" alt="Client Logo"></div>
 
       </div>
     </div>
+
+    <!-- View All Button -->
+    <div class="client-btn-wrapper">
+      <a href="https://www.safehandssecurityservices.com.au/our-clients/" class="client-btn" target="_blank" rel="noopener">View Our Clients</a>
+    </div>
+
   </div>
 
 </div>
